@@ -1,5 +1,2 @@
-Git is a distributed version control system.
-Git is free software.
-This is very cool.
-what?
-oh ...
+This project is use for learning HTML&CSS&JS.
+Programing start from zeros.
