@@ -1,0 +1,5 @@
+<style media="screen">
+  * {margin: 0; border: 0;}
+  .wrap {width: 100%; padding-bottom: 100%; min-width: 200}
+  .wrap div {background-color: orange; width: 31%; padding-top: 31%; margin: 1%; border-radius: 3%; float: left;}
+</style>
