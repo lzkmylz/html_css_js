@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <title>打砖块游戏</title>
     <meta name="author" content="lzkmylz">
+    <style media="screen">
+      canvas {
+        border: 1px black solid;
+      }
+    </style>
   </head>
   <body>
     <canvas id="canvas" width="600" height="400"></canvas>
@@ -13,9 +18,11 @@
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
       var imageObj = new Image();
+      var x = 175;
+      var y = 300;
 
       imageObj.onload = function() {
-        context.drawImage(imageObj, 300, 300);
+        context.drawImage(imageObj, x, y);
       };
       imageObj.src = './paddle.png';
 
@@ -24,7 +31,7 @@
         if (keyName === 'a') {
           // do not alert when only Control key is pressed.
           return true;
-        } else {
+        } else if (keyName === 'd') {
           return false;
         }
       }
@@ -33,13 +40,18 @@
           const keyName = event.key;
 
           if (move_left(keyName)) {
-            
+            context.clearRect(0, 0, 600, 400);
+            x -= 10;
+            context.drawImage(imageObj, x, y);
           } else {
-
+            context.clearRect(0, 0, 600, 400);
+            x += 10;
+            context.drawImage(imageObj, x, y);
           }
 
-      }
-      var move = window.setInterval(move_judge, 100);
+      })}
+
+      var move = window.setInterval(move_judge(), 100);
 
     </script>
   </body>
