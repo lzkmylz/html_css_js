@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>打砖块游戏</title>
+    <meta name="author" content="lzkmylz">
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 300, 300);
+      };
+      imageObj.src = './paddle.png';
+
+      //左右移动
+      var move_left = function(keyName) {
+        if (keyName === 'a') {
+          // do not alert when only Control key is pressed.
+          return true;
+        } else {
+          return false;
+        }
+      }
+      var move_judge = function() {
+        document.addEventListener('keydown', (event) => {
+          const keyName = event.key;
+
+          if (move_left(keyName)) {
+            
+          } else {
+
+          }
+
+      }
+      var move = window.setInterval(move_judge, 100);
+
+    </script>
+  </body>
+</html>
