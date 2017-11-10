@@ -15,44 +15,84 @@
   <body>
     <canvas id="canvas" width="600" height="400"></canvas>
     <script type="text/javascript">
-      var canvas = document.getElementById('canvas');
-      var context = canvas.getContext('2d');
-      var imageObj = new Image();
-      var x = 175;
-      var y = 300;
-
-      imageObj.onload = function() {
-        context.drawImage(imageObj, x, y);
-      };
-      imageObj.src = './paddle.png';
-
-      //左右移动
-      var move_left = function(keyName) {
-        if (keyName === 'a') {
-          // do not alert when only Control key is pressed.
-          return true;
-        } else if (keyName === 'd') {
-          return false;
-        }
+      var imageFromPath = function(path) {
+        var imageObj = new Image();
+        imageObj.src = path;
+        return imageObj
       }
-      var move_judge = function() {
-        document.addEventListener('keydown', (event) => {
+      var Paddle = function() {
+        var image = imageFromPath('./paddle.png');
+        var o = {
+          image: image,
+          x: 175,
+          y: 300,
+          speed: 5,
+          moveLeft: function(context, canvas) {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            if (this.x - this.speed > 0) {
+              this.x -= this.speed;
+            }
+            context.drawImage(this.image, this.x, this.y);
+          },
+          moveRight: function(context, canvas) {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            if (this.x + this.speed + this.image.width < canvas.width) {
+              this.x += this.speed;
+            }
+            context.drawImage(this.image, this.x, this.y);
+          },
+        }
+        return o
+      }
+      var Game = function() {
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var o = {
+          canvas: canvas,
+          context: context,
+        }
+        return o
+      }
+      var __main = function() {
+        var game = Game();
+        var paddle = Paddle();
+
+        paddle.image.onload = function() {
+          game.context.drawImage(paddle.image, paddle.x, paddle.y);
+        };
+
+        //左右移动
+        var move_to_left = false;
+        var move_to_right = false;
+
+        window.addEventListener('keydown', (event) => {
           const keyName = event.key;
-
-          if (move_left(keyName)) {
-            context.clearRect(0, 0, 600, 400);
-            x -= 10;
-            context.drawImage(imageObj, x, y);
-          } else {
-            context.clearRect(0, 0, 600, 400);
-            x += 10;
-            context.drawImage(imageObj, x, y);
+          if (keyName === 'a') {
+            move_to_left = true;
+          } else if (keyName === 'd') {
+            move_to_right = true;
           }
+        })
 
-      })}
+        window.addEventListener('keyup', (event) => {
+          const keyName = event.key;
+          if (keyName === 'a') {
+            move_to_left = false;
+          } else if (keyName === 'd') {
+            move_to_right = false;
+          }
+        })
 
-      var move = window.setInterval(move_judge(), 100);
+        setInterval(function() {
+          if (move_to_left) {
+            paddle.moveLeft(game.context, game.canvas);
+          } else if (move_to_right) {
+            paddle.moveRight(game.context, game.canvas);
+          }
+        }, 1000/60);
 
+      }
+      __main();
     </script>
   </body>
 </html>
