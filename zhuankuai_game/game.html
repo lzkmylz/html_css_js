@@ -44,52 +44,55 @@
         }
         return o
       }
-      var Game = function() {
+      var Game = function(paddle) {
+        var g = {
+          actions: {},
+          keys: {},
+          keydowns: {},
+        }
         var canvas = document.getElementById('canvas');
         var context = canvas.getContext('2d');
         var o = {
           canvas: canvas,
           context: context,
+          g: g,
         }
+        paddle.image.onload = function() {
+          o.context.drawImage(paddle.image, paddle.x, paddle.y);
+        };
+        //events
+        window.addEventListener('keydown', (event) => {
+          g.keydowns[event.key] = true
+        })
+        window.addEventListener('keyup', (event) => {
+          g.keydowns[event.key] = false
+        })
+        g.registerAction = function(key, callback) {
+          g.actions[key] = callback
+          g.keydowns[key] = false
+        }
+        //timer
+        setInterval(function() {
+          var actions = Object.keys(g.actions)
+          for (var i = 0; i < actions.length; i++) {
+            var key = actions[i]
+            if (g.keydowns[key]) {
+              g.actions[key]()
+            }
+          }
+        }, 1000/60)
         return o
       }
       var __main = function() {
-        var game = Game();
         var paddle = Paddle();
-
-        paddle.image.onload = function() {
-          game.context.drawImage(paddle.image, paddle.x, paddle.y);
-        };
-
+        var game = Game(paddle);
         //左右移动
-        var move_to_left = false;
-        var move_to_right = false;
-
-        window.addEventListener('keydown', (event) => {
-          const keyName = event.key;
-          if (keyName === 'a') {
-            move_to_left = true;
-          } else if (keyName === 'd') {
-            move_to_right = true;
-          }
+        game.g.registerAction('a', function() {
+          paddle.moveLeft(game.context, game.canvas);
         })
-
-        window.addEventListener('keyup', (event) => {
-          const keyName = event.key;
-          if (keyName === 'a') {
-            move_to_left = false;
-          } else if (keyName === 'd') {
-            move_to_right = false;
-          }
+        game.g.registerAction('d', function() {
+          paddle.moveRight(game.context, game.canvas);
         })
-
-        setInterval(function() {
-          if (move_to_left) {
-            paddle.moveLeft(game.context, game.canvas);
-          } else if (move_to_right) {
-            paddle.moveRight(game.context, game.canvas);
-          }
-        }, 1000/60);
 
       }
       __main();
