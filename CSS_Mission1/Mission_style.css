@@ -1,4 +1,4 @@
 <style media="screen">
-  * {margin: 0; border: 0;}
-  .square {width: 30%; padding-bottom: 30%; background-color: orange; float: left; margin: 1%; border-radius: 5%}
+  .body {margin: 0; border: 0;}
+  .square {width: 30%; padding-bottom: 30%; background-color: orange; float: left; margin: 1.66%; border-radius: 5%}
 </style>
