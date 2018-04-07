@@ -1,24 +1,24 @@
 
-body {margin: 0; border: 0;}
-.background {background-color: #68cdd5; width: 100%; padding-bottom: 100vh;}
-.img1 {width: 10%;}
+body {margin: 0; border: 0; font-size: 62.5%;}
+.background {background-color: #68cdd5; width: 100vw; padding-bottom: 100vh;}
+.img1 {width: 3rem;}
 .img2 {
-  width: 30%;
-  left: 50%;
-  top: 15%;
+  width: 10rem;
+  left: 50vw;
+  top: 15vh;
   position:absolute;
   transform: translate(-50%,-50%);
 }
-p {margin: 15%; position: absolute; top: 25%; color: white; font-size:62.5%;}
+p {margin: 15vw; position: absolute; top: 20vh; color: white; font-size:1rem;}
 .img3 {
-  width: 20%;
-  left: 15%;
-  top: 50%;
+  width: 5rem;
+  left: 15vw;
+  top: 50vh;
   position: absolute;
 }
 .img4 {
-  width: 20%;
-  right: 15%;
-  top: 50%;
+  width: 5rem;
+  right: 15vw;
+  top: 50vh;
   position: absolute;
 }
