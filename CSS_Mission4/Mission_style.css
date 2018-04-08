@@ -1,0 +1,30 @@
+* {margin: 0; border: 0; font-size: 62.5%;}
+.header {
+  width: 100%;
+  background-color: #5fc0cd;
+  float: left;
+}
+.close {
+  font-size: 3.5vw;
+  color: white;
+  float: left;
+  position: relative;
+  left: 5%;
+  margin-right: 10%;
+}
+.signin {
+  font-size: 3.5vw;
+  color: white;
+  float: right;
+  position: relative;
+  right: 5%;
+}
+.login {
+  font-size: 3.5vw;
+  color: white;
+  float: left;
+  position: relative;
+  left: 35%;
+  margin-right: 40%;
+  transform: translate(-50%,0);
+}
