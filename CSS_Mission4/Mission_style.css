@@ -17,16 +17,18 @@ color: #999;
   background-color: #5fc0cd;
   float: left;
   margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .close {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   float: left;
   position: relative;
   left: 5vw;
 }
 .signin {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   float: right;
   position: relative;
@@ -38,7 +40,7 @@ color: #999;
   max-width: 100%;
   max-height: 100%;
   transform: translate(-50%,0);
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .login_p {
   color: white;
@@ -112,9 +114,11 @@ color: #999;
   background-color: #5fc0cd;
   float: left;
   margin-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .login_bottom {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   float: left;
   position: relative;
@@ -126,4 +130,5 @@ color: #999;
   float: right;
   right: 5%;
   color: #5fc0cd;
+  font-size: 2.5rem;
 }
