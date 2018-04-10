@@ -59,12 +59,12 @@ color: #999;
 .phone_img {
   float: left;
   max-width: 100%;
-  width: 15%;
+  width: 14%;
 }
 .reg_img {
   float: left;
   max-width: 100%;
-  width: 5%;
+  width: 4%;
 }
 .user_phone {
   font-family: PingFangSC-Regular, -apple-system, Simsun;
@@ -74,7 +74,7 @@ color: #999;
   padding-right: 5%;
   max-width: 100%;
   width: 60%;
-  font-size: 8vw;
+  font-size: 6vw;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -94,7 +94,7 @@ color: #999;
 .reg_img2 {
   float: left;
   max-width: 100%;
-  width: 5%;
+  width: 4%;
 }
 .user_code {
   font-family: PingFangSC-Regular, -apple-system, Simsun;
@@ -104,7 +104,7 @@ color: #999;
   padding-right: 5%;
   max-width: 100%;
   width: 60%;
-  font-size: 8vw;
+  font-size: 6vw;
   padding-top: 3%;
   padding-bottom: 3%;
 }
