@@ -19,3 +19,52 @@
   font-size: 2rem;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
+.mainBody {
+  display: flex;
+}
+.footer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10%;
+  z-index: 99;
+}
+.leave_msg {
+  width: 40%;
+  position: absolute;
+  left: 5%;
+  border: 2px solid #5fc0cd;
+  border-radius: 10%;
+  font-size: 1rem;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.connect_ph {
+  width: 40%;
+  position: absolute;
+  left: 55%;
+  background-color: #5fc0cd;
+  border: 2px solid #5fc0cd;
+  border-radius: 10%;
+  font-size: 1rem;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.leave_msg p {
+  color: #5fc0cd;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+
+}
+.connect_ph p {
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+
+}
