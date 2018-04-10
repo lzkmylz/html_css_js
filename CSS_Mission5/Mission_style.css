@@ -1,0 +1,21 @@
+* {margin: 0; border: 0;}
+.header {
+  display: flex;
+  background-color: #5fc0cd;
+  flex-direction: row;
+  align-items: center;
+}
+.back_bottom {
+  max-width: 100%;
+  width: 46.4px;
+  height: 64px;
+}
+.person_mainpage {
+  color: white;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 2rem;
+  font-family: PingFangSC-Regular, -apple-system, Simsun;
+}
