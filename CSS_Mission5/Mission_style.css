@@ -1,4 +1,5 @@
 * {margin: 0; border: 0;}
+/* header */
 .header {
   display: flex;
   background-color: #5fc0cd;
@@ -7,8 +8,9 @@
 }
 .back_bottom {
   max-width: 100%;
-  width: 46.4px;
-  height: 64px;
+  width: 24px;
+  left: 16px;
+  position: relative;
 }
 .person_mainpage {
   color: white;
@@ -16,9 +18,11 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%,0);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
+
+/* main body */
 .mainBody {
   display: flex;
 }
@@ -36,7 +40,7 @@
 .head_picture .head_pictureimg {
   width: 80px;
   position: absolute;
-  top: 144px;
+  top: 120px;
   transform: translate(0,-50%);
   left: 16px;
 }
@@ -50,7 +54,7 @@
   flex-direction: row;
   z-index: 2;
   position: absolute;
-  top: 120px;
+  top: 100px;
   left: 120px;
 }
 .line1 .old {
@@ -66,7 +70,7 @@
   flex-direction: row;
   z-index: 2;
   position: absolute;
-  top: 150px;
+  top: 130px;
   left: 120px;
 }
 .line2 .position {
@@ -81,6 +85,214 @@
   font-size: 12px;
 }
 
+/* main words */
+.main_words {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 200px;
+}
+/* line 1 */
+.mainWords_line1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.mainWords_line1_img {
+  position: absolute;
+  height: 15px;
+  width: 3px;
+  left: 16px;
+  top: 25px;
+}
+.mainWords_line1Word {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 100vw;
+}
+/* separation_line1 */
+.separation_line1 {
+  border: 1px solid #e1e5e7;
+  position: absolute;
+  top: 50px;
+  width: 100vw;
+}
+/* line 2 */
+.mainWords_line2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.star1 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  transform: translate(0,25%);
+}
+.mainWords_line2_word1 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 40px;
+}
+.reg_line2 {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+.star2 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 60px;
+  left: 110px;
+  transform: translate(0,25%);
+}
+.mainWords_line2_word2 {
+  position: absolute;
+  top: 60px;
+  left: 130px;
+  width: 80px;
+}
+/* separation_line2 */
+.separation_line2 {
+  border: 1px solid #e1e5e7;
+  position: absolute;
+  top: 90px;
+  width: 100vw;
+}
+/* line3 */
+.mainWords_line3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.mainWords_line3_word1 {
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  width: 100px;
+  color: #e5e5e5;
+}
+.reg_line3 {
+  position: absolute;
+  top: 100px;
+  left: 110px;
+}
+.mainWords_line3_word2 {
+  position: absolute;
+  left: 120px;
+  top: 100px;
+  width: 100px;
+}
+/* separation_line3 */
+.separation_line3 {
+  border: 1px solid #e1e5e7;
+  position: absolute;
+  top: 130px;
+  width: 100vw;
+}
+/* line4 */
+.mainWords_line4 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.mainWords_line4_word1 {
+  position: absolute;
+  left: 40px;
+  top: 140px;
+  width: 100px;
+  color: #e5e5e5;
+}
+.reg_line4 {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+}
+.mainWords_line4_word2 {
+  position: absolute;
+  left: 120px;
+  top: 140px;
+  width: 100px;
+}
+/* separation_line4 */
+.separation_line4 {
+  border: 1px solid #e1e5e7;
+  position: absolute;
+  top: 170px;
+  width: 100vw;
+}
+/* line5 */
+.mainWords_line5 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+.mainWords_line5_word1 {
+  position: absolute;
+  left: 40px;
+  top: 180px;
+  width: 100px;
+  color: #e5e5e5;
+}
+.reg_line5 {
+  position: absolute;
+  top: 180px;
+  left: 110px;
+}
+.mainWords_line5_word2 {
+  position: absolute;
+  left: 120px;
+  top: 180px;
+  width: 100px;
+  color: red;
+}
+/* separation_line5 */
+.separation_line5 {
+  border: 1px solid #e1e5e7;
+  position: absolute;
+  top: 210px;
+  width: 100vw;
+}
+/* line6 */
+.mainWords_line6 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  top: 220px;
+  align-items: center;
+}
+.mainWords_line6_word1 {
+  position: relative;
+  left: 40px;
+  width: 100px;
+  color: #e5e5e5;
+}
+.reg_line6 {
+  position: absolute;
+  left: 110px;
+}
+.mainWords_line6_word2 {
+  position: relative;
+  left: 20px;
+  margin-right: 12px;
+  flex: 1;
+}
+/* separation_line6 */
+.separation_line6 {
+  border: 1px solid #e1e5e7;
+  position: relative;
+  top: 230px;
+  width: 100vw;
+}
+
+/* footer */
 .footer {
   max-width: 100%;
   width: 100%;
