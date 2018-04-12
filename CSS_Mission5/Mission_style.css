@@ -332,7 +332,7 @@ html {
   padding-top: 2%;
   padding-bottom: 2%;
   border: 2px solid #5fc0cd;
-  border-radius: 10%;
+  border-radius: 5%;
   font-size: 1rem;
 }
 .connect_ph {
@@ -341,7 +341,7 @@ html {
   width: 40%;
   left: 55%;
   border: 2px solid #5fc0cd;
-  border-radius: 10%;
+  border-radius: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
   background-color: #5fc0cd;
