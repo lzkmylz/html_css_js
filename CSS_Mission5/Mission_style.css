@@ -7,36 +7,36 @@ html {
 }
 .Site {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 /* header */
 .header {
   display: flex;
-  background-color: #5fc0cd;
   flex-direction: row;
   align-items: center;
   overflow: auto;
+  z-index: 99;
+  background-color: #5fc0cd;
   position: absolute;
   width: 100%;
-  z-index: 99;
 }
 .back_bottom {
   max-width: 100%;
+  position: relative;
   width: 24px;
   left: 16px;
-  position: relative;
 }
 .person_mainpage {
-  color: white;
   max-width: 100%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 1rem;
+  color: white;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
 
@@ -45,9 +45,9 @@ html {
   display: flex;
   overflow: scroll;
   flex: 1;
-  width: 100%;
   position: relative;
   overflow-x: hidden;
+  width: 100%;
 }
 .doctor {
   max-width: 100%;
@@ -59,23 +59,23 @@ html {
   flex-direction: row;
 }
 .head_picture .head_pictureimg {
-  width: 80px;
   position: absolute;
+  width: 80px;
   top: 120px;
-  transform: translate(0, -50%);
   left: 16px;
+  transform: translate(0, -50%);
 }
 .head_words {
   display: flex;
   flex-direction: column;
 }
 .line1 {
-  color: white;
   display: flex;
   flex-direction: row;
   position: absolute;
   top: 100px;
   left: 120px;
+  color: white;
 }
 .line1 .old {
   position: absolute;
@@ -85,17 +85,17 @@ html {
   font-size: 12px;
 }
 .line2 {
-  color: white;
   display: flex;
   flex-direction: row;
   position: absolute;
   top: 130px;
   left: 120px;
+  color: white;
 }
 .line2 .position {
+  position: absolute;
   width: 9px;
   height: 15px;
-  position: absolute;
 }
 .line2 .words {
   position: absolute;
@@ -145,9 +145,9 @@ html {
   position: absolute;
 }
 .star1 {
+  position: absolute;
   width: 15px;
   height: 15px;
-  position: absolute;
   left: 40px;
   top: 60px;
   transform: translate(0,25%);
@@ -164,9 +164,9 @@ html {
   left: 100px;
 }
 .star2 {
+  position: absolute;
   width: 15px;
   height: 15px;
-  position: absolute;
   top: 60px;
   left: 110px;
   transform: translate(0,25%);
@@ -282,10 +282,10 @@ html {
 .mainWords_line6 {
   display: flex;
   flex-direction: row;
+  align-items: center;
   position: relative;
   width: 100vw;
   top: 220px;
-  align-items: center;
 }
 .mainWords_line6_word1 {
   position: relative;
@@ -316,48 +316,46 @@ html {
   width: 100%;
   display: flex;
   flex-direction: row;
-  position: relative;
-  bottom: 0;
   text-align: center;
   overflow: auto;
   z-index: 99;
+  position: relative;
+  bottom: 0;
   padding-bottom: 15%;
   padding-top: 5%;
 }
 .leave_msg {
-  width: 40%;
+  display: flex;
   position: absolute;
+  width: 40%;
   left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   border: 2px solid #5fc0cd;
   border-radius: 10%;
   font-size: 1rem;
-  display: flex;
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 .connect_ph {
-  width: 40%;
+  display: flex;
   position: absolute;
+  width: 40%;
   left: 55%;
-  background-color: #5fc0cd;
   border: 2px solid #5fc0cd;
   border-radius: 10%;
-  font-size: 1rem;
-  display: flex;
   padding-top: 2%;
   padding-bottom: 2%;
+  background-color: #5fc0cd;
+  font-size: 1rem;
 }
 .leave_msg p {
-  color: #5fc0cd;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-
+  color: #5fc0cd;
 }
 .connect_ph p {
-  color: white;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-
+  color: white;
 }
