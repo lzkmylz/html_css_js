@@ -1,10 +1,23 @@
 * {margin: 0; border: 0;}
+html {height: 100%;}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 /* header */
 .header {
   display: flex;
   background-color: #5fc0cd;
   flex-direction: row;
   align-items: center;
+  overflow: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
 .back_bottom {
   max-width: 100%;
@@ -18,22 +31,25 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%,0);
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
 
 /* main body */
 .mainBody {
   display: flex;
+  overflow: scroll;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 .doctor {
   max-width: 100%;
   height: 165px;
   width: 100%;
-  z-index: 1;
 }
 .head_picture {
-  z-index: 2;
   display: flex;
   flex-direction: row;
 }
@@ -52,7 +68,6 @@
   color: white;
   display: flex;
   flex-direction: row;
-  z-index: 2;
   position: absolute;
   top: 100px;
   left: 120px;
@@ -68,7 +83,6 @@
   color: white;
   display: flex;
   flex-direction: row;
-  z-index: 2;
   position: absolute;
   top: 130px;
   left: 120px;
@@ -294,13 +308,16 @@
 
 /* footer */
 .footer {
-  max-width: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  bottom: 10%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  overflow: auto;
   z-index: 99;
+  padding-bottom: 15%;
+  padding-top: 5%;
 }
 .leave_msg {
   width: 40%;
