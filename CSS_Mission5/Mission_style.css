@@ -1,5 +1,10 @@
-* {margin: 0; border: 0;}
-html {height: 100%;}
+* {
+  margin: 0;
+  border: 0;
+}
+html {
+  height: 100%;
+}
 .Site {
   display: flex;
   min-height: 100vh;
@@ -30,7 +35,7 @@ html {height: 100%;}
   max-width: 100%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   font-size: 1rem;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
@@ -57,7 +62,7 @@ html {height: 100%;}
   width: 80px;
   position: absolute;
   top: 120px;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   left: 16px;
 }
 .head_words {
@@ -346,13 +351,13 @@ html {height: 100%;}
   color: #5fc0cd;
   position: relative;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
 
 }
 .connect_ph p {
   color: white;
   position: relative;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
 
 }
