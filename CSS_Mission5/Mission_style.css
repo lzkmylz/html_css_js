@@ -48,10 +48,12 @@ html {
   position: relative;
   overflow-x: hidden;
   width: 100%;
+  top: 33px;
+  margin-bottom: 50px;
 }
 .doctor {
   max-width: 100%;
-  height: 165px;
+  height: 200px;
   width: 100%;
 }
 .head_picture {
@@ -61,7 +63,7 @@ html {
 .head_picture .head_pictureimg {
   position: absolute;
   width: 80px;
-  top: 120px;
+  top: 100px;
   left: 16px;
   transform: translate(0, -50%);
 }
@@ -73,7 +75,7 @@ html {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 120px;
   color: white;
 }
@@ -88,7 +90,7 @@ html {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 130px;
+  top: 110px;
   left: 120px;
   color: white;
 }
@@ -317,12 +319,13 @@ html {
   display: flex;
   flex-direction: row;
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
   z-index: 99;
   position: relative;
   bottom: 0;
   padding-bottom: 15%;
-  padding-top: 5%;
+  padding-top: 5px;
+  background-color: white;
 }
 .leave_msg {
   display: flex;
