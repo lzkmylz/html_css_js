@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+.navbar-fixed-top {
+  background-color: #5fc0cd;
+}
 .navbar-center {
   background-color: #55a8b3;
   position: absolute;
@@ -58,10 +61,11 @@
 }
 
 .navbar-fixed-bottum {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 0;
+  bottom: 0;
   margin-bottom: 0;
+  border-width: 1px 0 0;
   width: 100%;
   background-color: #f8fafb;
 }
@@ -82,4 +86,54 @@
   left: 75%;
   height: 50px;
   transform: translate(-50%, 0);
+}
+
+.mainbody {
+  position: absolute;
+  left: 0;
+  padding-top: 8px;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  top: 100px;
+  width: 100%;
+}
+.line {
+  border-bottom: 1px solid #e1e5e7;
+  padding-bottom: 8px;
+}
+.calendar {
+  position: relative;
+  left: 0;
+  padding-left: 25px;
+  padding-right: 10px;
+  height: 16px;
+  padding-right: 10px;
+}
+.service_date {
+  color: #cfcfcf;
+}
+.service_time {
+  position: relative;
+  left: 55px;
+}
+.service_price {
+  position: relative;
+  left: 95px;
+  color: #ec6b4a;
+}
+.link_right {
+  position: relative;
+  left: 100px;
+  height: 20px;
+}
+.position_img {
+  position: relative;
+  left: 0;
+  height: 20px;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+.position {
+  position: relative;
+  color: #cfcfcf;
 }
