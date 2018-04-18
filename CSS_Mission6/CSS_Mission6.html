@@ -6,6 +6,8 @@
     <meta name="author" content="lzkmylz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
     <link rel="stylesheet" href="Mission_style.css" type="text/css">
   </head>
 
@@ -24,29 +26,39 @@
             <img src="images/task5-2_03.jpg" alt="" class="navbar-img">
           </div>
         </div>
-        <ol class="breadcrumb">
+        <div class="breadcrumb">
           <div class="menu dropdown">
-            <button class="btn btn-info" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
               所在地
               <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu"></ul>
+            <ul class="dropdown-menu" role="menu">
+              <li>海淀</li>
+              <li>朝阳</li>
+            </ul>
           </div>
           <img src="images/shape7.png" alt="" class="header_sep_1">
           <div class="menu dropdown">
-            <button class="btn btn-info" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
               食宿
               <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu"></ul>
+            <ul class="dropdown-menu">
+              <li>自理</li>
+              <li>非自理</li>
+            </ul>
           </div>
           <img src="images/shape7.png" alt="" class="header_sep_2">
           <div class="menu dropdown">
-            <button class="btn btn-info" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
               病人情况
               <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu"></ul>
+            <ul class="dropdown-menu">
+              <li>良好</li>
+              <li>一般</li>
+              <li>严重</li>
+            </ul>
           </div>
         </ol>
       </nav>
