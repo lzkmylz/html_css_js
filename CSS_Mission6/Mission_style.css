@@ -140,13 +140,11 @@
   left: 55px;
 }
 .service_price {
-  position: relative;
-  left: 95px;
   color: #ec6b4a;
+  margin-right: 10px;
 }
-.link_right {
-  position: relative;
-  left: 100px;
+.right-arrow {
+  margin-right: 25px;
   height: 20px;
 }
 .position_img {
