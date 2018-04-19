@@ -55,7 +55,7 @@
   border: 0;
 }
 .menu .btn .caret {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 50%;
 }
@@ -70,17 +70,17 @@
   background-color: #f8fafb;
 }
 .footer_leftbutton {
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, 0);
   left: 25%;
-  height: 25px;
+  height: 50px;
   padding: 0;
   border: 0;
   background-color: #f8fafb;
   color: #5fc0cd;
 }
 .footer_centerbutton {
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, 0);
   left: 50%;
   height: 50px;
@@ -89,10 +89,10 @@
   background-color: #f8fafb;
 }
 .footer_rightbutton {
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, 0);
   left: 75%;
-  height: 25px;
+  height: 50px;
   padding: 0;
   border: 0;
   background-color: #f8fafb;
@@ -103,11 +103,11 @@
   width: 72px;
 }
 .leftimg {
-  height: 100%;
+  height: 50%;
   width: 50%;
 }
 .rightimg {
-  height: 100%;
+  height: 50%;
   width: 50%;
 }
 
