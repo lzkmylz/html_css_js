@@ -70,14 +70,6 @@
   color: #919191;
   background-color: #ffffff;
 }
-.btn_to_right {
-  padding: 0;
-  border: 0;
-}
-.to_right_img {
-  width: 24px;
-  height: 50px;
-}
 .circle {
   border-bottom: 1px solid #c9c9c9;
 }
@@ -97,4 +89,20 @@
   height: 20px;
   background-color: #f0f0f0;
   border-radius: 50%;
+}
+
+.to_right {
+  position: relative;
+  top: -250px;
+  left: 1.5%;
+}
+.btn_to_right {
+  padding: 0;
+  border: 0;
+  width: 20px;
+  background-color: #ffffff;
+}
+.to_right_img {
+  width: 20px;
+  height: 50px;
 }
