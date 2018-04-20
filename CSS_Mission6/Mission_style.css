@@ -6,26 +6,33 @@
   background-color: #5fc0cd;
 }
 .navbar-center {
-  background-color: #55a8b3;
   position: absolute;
-  margin-top: 5px;
+  width: 146px;
+  height: 40px;
   left: 50vw;
+  margin-top: 5px;
   transform: translate(-50%, 0);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  background-color: #55a8b3;
 }
 .navbar-img {
   position: absolute;
   height: 40px;
   right: 0;
 }
-.find_gz a {
+.btn_find_gz {
+  height: 40px;
+  width: 72px;
   color: white;
+  background-color: #55a8b3;
 }
-.find_hg a {
-  background-color: white;
+.btn_find_hg {
+  height: 40px;
+  width: 72px;
   color: #55a8b3;
+  background-color: white;
 }
 
 .breadcrumb {
@@ -34,10 +41,10 @@
   left: 0;
   padding-left: 0;
   padding-right: 0;
-  background-color: #ffffff;
+  width: 100%;
   border-bottom: 1px solid #e1e5e7;
   color: #CCCCCC;
-  width: 100%;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -50,9 +57,9 @@
 }
 .menu .btn {
   width: 100%;
+  border: 0;
   background-color: #ffffff;
   color: #cfcfcf;
-  border: 0;
 }
 .menu .btn .caret {
   position: fixed;
@@ -71,32 +78,32 @@
 }
 .footer_leftbutton {
   position: fixed;
-  transform: translate(-50%, 0);
   left: 25%;
   height: 50px;
   padding: 0;
   border: 0;
-  background-color: #f8fafb;
+  transform: translate(-50%, 0);
   color: #5fc0cd;
+  background-color: #f8fafb;
 }
 .footer_centerbutton {
   position: fixed;
-  transform: translate(-50%, 0);
   left: 50%;
   height: 50px;
   padding: 0;
   border: 0;
+  transform: translate(-50%, 0);
   background-color: #f8fafb;
 }
 .footer_rightbutton {
   position: fixed;
-  transform: translate(-50%, 0);
   left: 75%;
   height: 50px;
   padding: 0;
   border: 0;
-  background-color: #f8fafb;
+  transform: translate(-50%, 0);
   color: #cfcfcf;
+  background-color: #f8fafb;
 }
 .centerimg {
   height: 100%;
@@ -113,12 +120,12 @@
 
 .mainbody {
   position: absolute;
+  top: 100px;
+  width: 100%;
   left: 0;
   padding-top: 8px;
   padding-bottom: 50px;
   overflow-x: hidden;
-  top: 100px;
-  width: 100%;
 }
 .line {
   border-bottom: 1px solid #e1e5e7;
@@ -126,10 +133,9 @@
 }
 .calendar {
   position: relative;
+  height: 16px;
   left: 0;
   padding-left: 25px;
-  padding-right: 10px;
-  height: 16px;
   padding-right: 10px;
 }
 .service_date {
@@ -137,15 +143,19 @@
 }
 .service_time {
   position: relative;
-  left: 55px;
+  left: 40px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .service_price {
   color: #ec6b4a;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .right-arrow {
-  margin-right: 25px;
   height: 20px;
+  margin-right: 25px;
 }
 .position_img {
   position: relative;
