@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-header {
+  background-color: #29bde0;
+  text-align: center;
+}
+.header_back {
+  border: 0;
+}
+.header_back_img {
+  height: 50px;
+  width: 60px;
+}
+.navbar_title {
+  position: absolute;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+  transform: translate(-50%, 50%);
+}
+.btn_header_close {
+  padding: 0;
+  border: 0;
+  right: 40px;
+}
+.close_img {
+  height: 50px;
+}
+
+.word_please_vote {
+  padding: 15px 0;
+  background-color: #b9e9f5;
+}
+.button_play {
+  padding: 0;
+  border: 0;
+  right: 30px;
+  background-color: #b9e9f5;
+  transform: translate(0, -25%);
+}
+.play_img {
+  height: 30px;
+}
+.word_vote {
+  position: relative;
+  left: 30px;
+}
