@@ -1,9 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: PingFangSC-Regular, -apple-system, Simsun;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .navbar-fixed-top {
@@ -20,70 +17,84 @@
 .mainbody {
   position: absolute;
   left: 0;
+  top: 50px;
   width: 100vw;
   height: 100vh;
   background-color: #f0f0f0;
+  overflow: hidden;
+  text-align: center;
 }
 
 .lastgame {
-  position: relative;
-  top: 60px;
-  left: 15px;
-  width: 100%;
   padding: 10px 0;
+  margin-top: 20px;
   border: 1px solid #c9c9c9;
-  text-align: center;
-  background-color: #ffffff;
-  z-index: 2;
-}
-.lastgame_words {
-  position: relative;
   font-size: 20px;
-  color: #b3b3b3;
+  color: #9a9a9a;
+  background-color: #ffffff;
 }
 .back_icon {
-  position: relative;
-  height: 28px;
-  right: 15px;
+  height: 24px;
+  width: 12px;
 }
 
-.catchgoastgame {
-  position: relative;
-  top: 70px;
-  bottom: 0px;
-  left: 15px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #c9c9c9;
-  background-color: #ffffff;
-  text-align: center;
-}
-.title {
-  padding: 10px 0;
-  border-bottom: 1px solid #fbb435;
-  font-size: 20px;
-  color: #fbb435;
-}
-
-.body {
+.body_games {
   margin-top: 20px;
+}
+.catch_goast_game {
+  padding: 10px 0;
+  border: 1px solid #c9c9c9;
+  font-size: 20px;
+  border-bottom: 1px solid #fbb435;
+  color: #fbb435;
+  background-color: #ffffff;
 }
 .boxgrid {
   padding: 10px 0;
-  margin: 0 35px 0 20px;
-  background-color: #69d1e9;
-  color: white;
+  background-color: #ffffff;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
 }
-.boxgrid p {
-  transform: translate(0, 25%);
+.wordgrid {
+  background-color: #ffffff;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+}
+.box {
+  padding: 15px 0;
+  font-size: 20px;
+  color: white;
+  background-color: #69d1e9;
 }
 .words {
-  padding: 10px 0 0 0;
-  color: #9a9a9a;
+  color: #919191;
+  background-color: #ffffff;
 }
-.right_jump {
-  position: absolute;
+.btn_to_right {
+  padding: 0;
+  border: 0;
+}
+.to_right_img {
+  width: 24px;
+  height: 50px;
+}
+.circle {
+  border-bottom: 1px solid #c9c9c9;
+}
+.circle_box {
+  display: inline-block;
+}
+.circle_blue {
+  float: left;
   width: 20px;
-  right: 15px;
-  top: 160px;
+  height: 20px;
+  background-color: #69d1e9;
+  border-radius: 50%;
+}
+.circle_gray {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
 }
