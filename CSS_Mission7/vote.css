@@ -3,6 +3,9 @@
   margin: 0;
 }
 
+.navbar-fixed-top {
+  border: 0;
+}
 .navbar-header {
   width: 100%;
   background-color: #29bde0;
@@ -36,6 +39,14 @@
   height: 30px;
 }
 
+.mainbody {
+  position: absolute;
+  left: 0;
+  top: 135px;
+  width: 100vw;
+  text-align: center;
+  background-color: #29bde0;
+}
 .word_please_vote {
   padding: 15px 0 35px 0;
   background-color: #b9e9f5;
@@ -58,9 +69,8 @@
   font-size: 16px;
 }
 .triangle_box {
-  background-color: #29bde0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #29bde0;
+  background-color: #29bde0;
 }
 .triangle {
   position: relative;
@@ -80,16 +90,14 @@
 }
 
 .headpictures_row_ {
-  background-color: #29bde0;
   margin: 0;
 }
 .headpictures_row {
-  border-top: 1px solid #29bde0;
+  position: relative;
   padding-top: 10px;
-  padding-bottom: 110px;
-  width: 100%;
+  padding-bottom: 20px;
+  width: 100vw;
   display: inline-block;
-  background-color: #29bde0;
 }
 .headpicture {
   padding: 0;
@@ -127,15 +135,14 @@
   height: 15px;
 }
 .left {
-  position: fixed;
-  left: 5%;
+  left: 10%;
 }
 .center {
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
 }
 .right {
-  position: fixed;
-  right: 5%;
+  float: right;
+  right: 10%;
 }
