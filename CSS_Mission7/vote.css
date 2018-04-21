@@ -5,6 +5,8 @@
 
 .navbar-fixed-top {
   border: 0;
+  margin-bottom: 0;
+  background-color: #29bde0;
 }
 .navbar-header {
   width: 100%;
@@ -42,10 +44,13 @@
 .mainbody {
   position: absolute;
   left: 0;
-  top: 135px;
+  top: 137px;
   width: 100vw;
   text-align: center;
   background-color: #29bde0;
+}
+.padding_footer {
+  padding-bottom: 80px;
 }
 .word_please_vote {
   padding: 15px 0 35px 0;
@@ -67,6 +72,10 @@
   position: relative;
   left: 30px;
   font-size: 16px;
+}
+
+.headpictures_row_ {
+  background-color: #29bde0;
 }
 .triangle_box {
   padding-bottom: 10px;
@@ -145,4 +154,25 @@
 .right {
   float: right;
   right: 10%;
+}
+.navbar-fixed-bottom {
+  border: 0;
+  background-color: #29bde0;
+  text-align: center;
+}
+.navbar-footer {
+  padding: 10px 0;
+}
+.vote_death {
+  position: relative;
+  top: 5px;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 0);
+  background-color: #fbb435;
+}
+.vote_death p {
+  padding: 10px 0;
+  color: white;
+  font-size: 20px;
 }
