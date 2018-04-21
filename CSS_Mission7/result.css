@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header_row {
+  background-color: #29bde0;
+  text-align: center;
+}
+.btn_home {
+  padding: 0;
+  border: 0;
+  height: 50px;
+  width: 63px;
+}
+.home_img {
+  height: 50px;
+}
+.header_words {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  font-size: 20px;
+  color: white;
+  transform: translate(-50%, 0);
+}
+.btn_help {
+  padding: 0;
+  border: 0;
+  width: 48.2px;
+  height: 50px;
+}
+.help_img {
+  height: 50px;
+}
+
+.mainbody {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100vw;
+  text-align: center;
+  background-color: #29bde0;
+}
+.vectory_words {
+  font-size: 20px;
+  color: #ffc865;
+}
+
+.game_data_start {
+  padding-top: 20px;
+}
+.game_data,
+.game_dataline1,
+.game_dataline2 {
+  text-align: left;
+  color: white;
+}
+.data_killer {
+  float: left;
+  position: relative;
+  left: 0;
+  display: inline;
+}
+.role {
+  float: left;
+  position: relative;
+  letter-spacing: 14px;
+}
+.role2 {
+  float: left;
+  position: relative;
+}
+.data {
+  float: left;
+  position: relative;
+  right: 14px;
+}
+.data2 {
+  float: left;
+  position: relative;
+}
+.data_police {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.data_people {
+  float: right;
+}
+.data_shoter {
+  float: left;
+}
+.data_doctor {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
