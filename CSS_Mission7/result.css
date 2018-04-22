@@ -131,3 +131,26 @@
   float: left;
   color: #a6a6a6;
 }
+
+.navbar-fixed-bottom {
+  height: 64px;
+  background-color: rgba(153, 223, 240, 0.5);
+  text-align: center;
+}
+.footer_row {
+  padding-top: 14px;
+}
+.btn_footer_left {
+  font-size: 16px;
+  color: white;
+  background-color: #f66f6f;
+}
+.btn_footer_right {
+  font-size: 16px;
+  color: white;
+  background-color: #fbb435;
+}
+.btn_footer_left p,
+.btn_footer_right p {
+  margin: 0;
+}
