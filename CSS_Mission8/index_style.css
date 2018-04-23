@@ -38,3 +38,59 @@
   text-align: center;
   color: white;
 }
+
+.slide {
+  margin: 0 -15px;
+}
+.caption_box {
+  bottom: 50%;
+  transform: translate(0, 50%);
+}
+.caption_line1 {
+  font-size: 20px;
+}
+.caption_line2_left {
+  font-size: 50px;
+}
+.caption_line2_right {
+  font-size: 25px;
+}
+
+.advantages {
+  text-align: center;
+  padding: 70px 0;
+}
+.effective_p1,
+.standard_p1,
+.connection_p1 {
+  padding: 20px 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.effective_p2,
+.standard_p2,
+.connection_p2,
+.study_p {
+  color: #dddddd;
+}
+.connection {
+  border-right: 1px dashed #dedede;
+}
+.study {
+  height: 180px;
+}
+.study_content {
+  position: relative;
+  top: 45px;
+}
+.study_num {
+  color: #65b691;
+}
+
+.howtolearn {
+  position: relative;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  font-weight: bold;
+}
