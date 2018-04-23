@@ -59,6 +59,7 @@
 .advantages {
   text-align: center;
   padding: 70px 0;
+  background-color: #fafafa;
 }
 .effective_p1,
 .standard_p1,
@@ -88,9 +89,45 @@
   color: #65b691;
 }
 
+.learn_row {
+  background-color: #fafafa;
+}
 .howtolearn {
   position: relative;
   transform: translate(-50%, 0);
   font-size: 14px;
   font-weight: bold;
+}
+
+.learn1_4 {
+  text-align: left;
+  background-color: #fafafa;
+}
+.step {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ffffff;
+}
+.number {
+  position: relative;
+  color: #29b078;
+  top: 18.5px;
+  font-weight: bold;
+}
+.step_words {
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #cacaca;
+}
+.right_arrow {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  left: 16.6%;
+  transform: translate(-50%, 50%);
 }
