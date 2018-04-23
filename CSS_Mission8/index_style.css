@@ -99,7 +99,9 @@
   font-weight: bold;
 }
 
-.learn1_4 {
+.learn1_4,
+.learn5_8 {
+  padding: 40px 0;
   text-align: left;
   background-color: #fafafa;
 }
@@ -116,11 +118,14 @@
   top: 18.5px;
   font-weight: bold;
 }
+.learn_step {
+  width: 12%;
+}
 .step_words {
   float: left;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
   color: #cacaca;
 }
 .right_arrow {
