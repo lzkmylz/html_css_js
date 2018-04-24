@@ -94,8 +94,8 @@
 }
 .howtolearn {
   position: relative;
-  transform: translate(-50%, 0);
-  font-size: 14px;
+  transform: translate(-25%, 0);
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -135,4 +135,85 @@
   padding: 0;
   left: 16.6%;
   transform: translate(-50%, 50%);
+}
+
+.students_show {
+  background-color: #fafafa;
+  padding: 40px 0;
+}
+.students_show_p {
+  position: relative;
+  width: 10%;
+  transform: translate(-25%, 0);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.student_pictures {
+  background-color: #fafafa;
+  text-align: center;
+}
+.student_box1 {
+  background-color: #ffffff;
+  margin-right: 15px;
+}
+.student_img {
+  margin-top: 20px;
+}
+.student_title {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.student_words {
+  text-align: left;
+  color: #b0b0b0;
+}
+.student_box2 {
+  background-color: #ffffff;
+  margin: 0 15px 0 15px;
+}
+.student_box3 {
+  background-color: #ffffff;
+  margin-left: 15px;
+}
+
+.point {
+  background-color: #fafafa;
+  padding: 20px 0;
+}
+.point_box {
+  transform: translate(-25%, 0);
+}
+.point_green,
+.point_gray {
+  float: left;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.point_green {
+  background-color: #29b078;
+}
+.point_gray {
+  background-color: #ffffff;
+}
+
+.enterprice {
+  background-color: #fafafa;
+  padding: 80px 0 40px 0;
+}
+.enterprice_p {
+  font-size: 16px;
+  font-weight: bold;
+  transform:  translate(-25%, 0);
+}
+
+.enterprice_pictures  {
+  background-color: #fafafa;
+}
+.enterprice_pictures img {
+  height: 100px;
+  width: 16.66%;
 }
