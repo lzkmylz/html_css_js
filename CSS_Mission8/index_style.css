@@ -3,6 +3,9 @@
   margin: 0;
 }
 
+.body {
+}
+
 .row1 {
   background-color: #fff;
 }
@@ -35,7 +38,7 @@
   float: right;
   display: block;
   font-size: 16px;
-  text-align: center;
+  text-align: right;
   color: white;
 }
 
@@ -71,8 +74,8 @@
 }
 .effective_p2,
 .standard_p2,
-.connection_p2,
-.study_p {
+.connection_p2 {
+  text-align: left;
   color: #dddddd;
 }
 .connection {
@@ -81,20 +84,31 @@
 .study {
   height: 180px;
 }
+.study_img {
+  padding: 0;
+  margin-right: 15px;
+}
+.study_p {
+  padding: 0;
+  color: #dddddd;
+  text-align: left;
+}
 .study_content {
   position: relative;
   top: 45px;
 }
 .study_num {
+  font-size: 16px;
+  font-weight: bold;
   color: #65b691;
 }
 
 .learn_row {
   background-color: #fafafa;
+  text-align: center;
 }
 .howtolearn {
-  position: relative;
-  transform: translate(-25%, 0);
+  display: inline-block;
   font-size: 16px;
   font-weight: bold;
 }
@@ -102,49 +116,41 @@
 .learn1_4,
 .learn5_8 {
   padding: 40px 0;
-  text-align: left;
   background-color: #fafafa;
 }
-.step {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #ffffff;
+.step_box {
+  padding: 0;
 }
-.number {
+.step_circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+.step_circle p {
   position: relative;
-  color: #29b078;
-  top: 18.5px;
+  transform: translate(0, 50%);
+  color: green;
   font-weight: bold;
 }
-.learn_step {
-  width: 12%;
-}
 .step_words {
-  float: left;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  color: #cacaca;
+  color: #a8a8a8;
 }
-.right_arrow {
-  position: relative;
-  width: 35px;
-  height: 35px;
+.step_img {
+  width: 40px;
+  height: 40px;
   padding: 0;
-  left: 16.6%;
-  transform: translate(-50%, 50%);
 }
 
 .students_show {
   background-color: #fafafa;
   padding: 40px 0;
+  text-align: center;
 }
 .students_show_p {
-  position: relative;
-  width: 10%;
-  transform: translate(-25%, 0);
+  display: inline-block;
   font-size: 16px;
   font-weight: bold;
 }
@@ -153,9 +159,9 @@
   background-color: #fafafa;
   text-align: center;
 }
-.student_box1 {
+.student_box {
   background-color: #ffffff;
-  margin-right: 15px;
+  padding: 0 15px 10px 15px;
 }
 .student_img {
   margin-top: 20px;
@@ -169,21 +175,14 @@
   text-align: left;
   color: #b0b0b0;
 }
-.student_box2 {
-  background-color: #ffffff;
-  margin: 0 15px 0 15px;
-}
-.student_box3 {
-  background-color: #ffffff;
-  margin-left: 15px;
-}
 
 .point {
   background-color: #fafafa;
   padding: 20px 0;
+  text-align: center;
 }
 .point_box {
-  transform: translate(-25%, 0);
+  display: inline-block;
 }
 .point_green,
 .point_gray {
@@ -191,6 +190,7 @@
   margin: 0 5px;
   width: 10px;
   height: 10px;
+  border: 1px solid #ececec;
   border-radius: 50%;
 }
 .point_green {
@@ -203,17 +203,109 @@
 .enterprice {
   background-color: #fafafa;
   padding: 80px 0 40px 0;
+  text-align: center;
 }
 .enterprice_p {
+  display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  transform:  translate(-25%, 0);
 }
 
 .enterprice_pictures  {
   background-color: #fafafa;
+  padding-bottom: 80px;
 }
-.enterprice_pictures img {
-  height: 100px;
-  width: 16.66%;
+.img_box {
+  float: left;
+  width: 20%;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+}
+.img_box img {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.friend_link {
+  background-color: #fff;
+  text-align: center;
+}
+.friend_link p {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link_line {
+  margin-top: 10px;
+  color: #bfbfbf;
+}
+.link_line2 {
+  margin: 10px 0;
+  color: #bfbfbf;
+}
+.link {
+  float: left;
+  width: 10%;
+  text-align: left;
+}
+
+.navbar-bottom {
+  position: absolute;
+  height: 400px
+  bottom: 0;
+  margin: 0 -15px 0 -15px;
+  background-color: #26a26f;
+  overflow-x: hidden;
+}
+.footer_body {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.line3_left {
+  padding-left: 0;
+}
+.aboutus,
+.contactus {
+  border-right: 1px solid #fff;
+}
+.aboutus {
+  text-align: left;
+}
+.contactus,
+.hezuoenter {
+  text-align: center;
+}
+.pttgame {
+  padding-left: 0;
+}
+.line3 {
+  padding-bottom: 20px;
+}
+.weixin_box {
+  margin-right: 10%;
+}
+
+.copyright {
+  color: white;
+  font-size: 8px;
+}
+.copyright_line {
+  position: relative;
+  left: 38.9%;
+  margin-left: 15px;
+}
+.copyright_p {
+  float: left;
+  padding-right: 5px;
+  border-right: 1px solid #fff;
+}
+.beian {
+  float: left;
+  padding-left: 5px;
 }
