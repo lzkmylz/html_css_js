@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row1 {
+  background-color: #fff;
+}
+.tel_words {
+  position: relative;
+  color: green;
+  transform: translate(0, 50%);
+}
+.row1_phone,
+.row1_qq,
+.row1_wechat {
+  float: right;
+}
+
+.navbar {
+  border: 0;
+  background-color: #29b078;
+  text-align: center;
+}
+.nav-header {
+  position: relative;
+  margin: 0 -15px;
+}
+.nav_header_link {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.nav_header_link li {
+  list-style: none;
+}
+.nav_header_link li a {
+  float: right;
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  color: white;
+}
+
+.line1 {
+  padding: 20px 15px 20px 15px;
+  border-bottom: 1px solid #d0d6d9;
+}
+
+.line2 {
+  padding: 10px 15px 10px 15px;
+}

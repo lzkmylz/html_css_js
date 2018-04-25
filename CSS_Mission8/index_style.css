@@ -3,14 +3,13 @@
   margin: 0;
 }
 
-.body {
-}
-
 .row1 {
   background-color: #fff;
 }
 .tel_words {
+  position: relative;
   color: green;
+  transform: translate(0, 50%);
 }
 .row1_phone,
 .row1_qq,
@@ -18,18 +17,23 @@
   float: right;
 }
 
-.nav-header,
+.navbar-header,
 .navbar {
   border: 0;
+  margin-bottom: 0;
   background-color: #29b078;
+  text-align: center;
 }
 .nav-header {
+  padding: 18px 0;
   position: relative;
   margin: 0 -15px;
+  background-color: #29b078;
 }
 .nav_header_link {
   position: absolute;
   top: 50%;
+  transform: translate(0, 50%);
 }
 .nav_header_link li {
   list-style: none;
@@ -241,11 +245,11 @@
 
 .link_line {
   margin-top: 10px;
-  color: #bfbfbf;
+  color: #999999;
 }
 .link_line2 {
   margin: 10px 0;
-  color: #bfbfbf;
+  color: #999999;
 }
 .link {
   float: left;
@@ -267,8 +271,14 @@
   border-bottom: 1px solid white;
   color: white;
 }
-.line1 p,
-.line2 p,
+.line1 p {
+  padding: 0;
+  text-align: left;
+}
+.line2 p {
+  padding: 0;
+  text-align: left;
+}
 .line3_left p {
   padding: 0;
 }
@@ -276,6 +286,7 @@
   padding-left: 0;
 }
 .line3_right {
+  text-align: left;
   padding: 0;
 }
 .line3_right p {
