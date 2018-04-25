@@ -267,8 +267,19 @@
   border-bottom: 1px solid white;
   color: white;
 }
+.line1 p,
+.line2 p,
+.line3_left p {
+  padding: 0;
+}
 .line3_left {
   padding-left: 0;
+}
+.line3_right {
+  padding: 0;
+}
+.line3_right p {
+  padding: 0;
 }
 .aboutus,
 .contactus {
@@ -294,11 +305,10 @@
 .copyright {
   color: white;
   font-size: 8px;
+  text-align: center;
 }
 .copyright_line {
-  position: relative;
-  left: 38.9%;
-  margin-left: 15px;
+  display: inline-block;
 }
 .copyright_p {
   float: left;
