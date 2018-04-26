@@ -119,6 +119,11 @@
   border: 1px solid #eeeded;
   background-color: #fff;
 }
+.line4 {
+  padding: 0;
+}
+.line4 .col-md-4 {
+}
 .box p {
   margin: 10px 0;
 }
