@@ -25,25 +25,30 @@
   text-align: center;
 }
 .nav-header {
-  padding: 18px 0;
   position: relative;
   margin: 0 -15px;
   background-color: #29b078;
 }
 .nav_header_link {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, 50%);
+  position: relative;
+  height: 86px;
+  margin-bottom: 0;
 }
 .nav_header_link li {
   list-style: none;
 }
 .nav_header_link li a {
-  float: right;
-  display: block;
+  position: relative;
+  height: 86px;
+  display: inline-block;
   font-size: 16px;
-  text-align: right;
+  text-align: center;
   color: white;
+  line-height: 82px;
+  text-decoration: none;
+}
+.nav_header_link li a:hover {
+  border-bottom: 5px solid #fff;
 }
 
 .slide {
