@@ -59,7 +59,8 @@
 .line2_row,
 .line3_row,
 .line4_row,
-.line5_row {
+.line5_row,
+.line6_row {
   background-color: #fafafa;
 }
 .line1 {
@@ -106,14 +107,16 @@
 }
 
 .line3,
-.line5 {
+.line5,
+.line6 {
   padding: 30px 0;
   border-bottom: 1px solid #d0d6d9;
   font-size: 16px;
   font-weight: bold;
 }
 .line3 p,
-.line5 p {
+.line5 p,
+.line6 p {
   margin-bottom: 0;
 }
 
