@@ -58,3 +58,74 @@
   top: 10px;
   padding-left: 0;
 }
+.header_adv {
+  background-color: #f1a750;
+}
+
+.line_row {
+  background-color: #fafafa;
+}
+.line1 {
+  padding: 20px 15px 20px 15px;
+  font-size: 16px;
+}
+.line1 p {
+  margin-bottom: 0;
+}
+.line1 span {
+  color: #29b078;
+}
+
+.mainbody {
+  background-color: #fafafa;
+}
+.mainbody_left_title_row {
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.mainbody_left_line_row {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.mainbody_title_p {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.enterprice_row1 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.enterprice_row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.circle_hollow {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ff7628;
+}
+.circle_solid {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ff7628;
+  background-color: #ff7628;
+}
+.enterprice_name {
+  float: left;
+  padding-left: 0;
+  color: #65c096;
+  font-weight: bold;
+}
