@@ -256,3 +256,84 @@
   text-align: left;
   text-indent:2em;
 }
+
+.footer_margin {
+  background-color: #fafafa;
+}
+.footer_margin_area {
+  height: 200px;
+}
+
+.navbar-bottom {
+  position: absolute;
+  height: 400px
+  bottom: 0;
+  margin: 0 -15px 0 -15px;
+  background-color: #26a26f;
+  overflow-x: hidden;
+}
+.footer_body {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.footer_line1 p {
+  padding: 0;
+  text-align: left;
+}
+.footer_line2 p {
+  padding: 0;
+  text-align: left;
+}
+.footer_line3_left p {
+  padding: 0;
+}
+.footer_line3_left {
+  padding-left: 0;
+}
+.footer_line3_right {
+  text-align: left;
+  padding: 0;
+}
+.footer_line3_right p {
+  padding: 0;
+}
+.aboutus,
+.contactus {
+  border-right: 1px solid #fff;
+}
+.aboutus {
+  text-align: left;
+}
+.contactus,
+.hezuoenter {
+  text-align: center;
+}
+.pttgame {
+  padding-left: 0;
+}
+.footer_line3 {
+  padding-bottom: 20px;
+}
+.weixin_box {
+  margin-right: 10%;
+}
+
+.copyright {
+  color: white;
+  font-size: 8px;
+  text-align: center;
+}
+.copyright_line {
+  display: inline-block;
+}
+.copyright_p {
+  float: left;
+  padding-right: 5px;
+  border-right: 1px solid #fff;
+}
+.beian {
+  float: left;
+  padding-left: 5px;
+}
