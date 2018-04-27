@@ -58,7 +58,8 @@
 .line1_row,
 .line2_row,
 .line3_row,
-.line4_row {
+.line4_row,
+.line5_row {
   background-color: #fafafa;
 }
 .line1 {
@@ -104,25 +105,25 @@
   text-decoration: none;
 }
 
-.line3 {
+.line3,
+.line5 {
   padding: 30px 0;
   border-bottom: 1px solid #d0d6d9;
   font-size: 16px;
   font-weight: bold;
 }
-.line3 p {
+.line3 p,
+.line5 p {
   margin-bottom: 0;
 }
 
+.line4 {
+  padding-left: 0;
+}
 .box {
   margin: 30px 0 20px 0;
   border: 1px solid #eeeded;
   background-color: #fff;
-}
-.line4 {
-  padding: 0;
-}
-.line4 .col-md-4 {
 }
 .box p {
   margin: 10px 0;
@@ -145,7 +146,7 @@
   font-weight: bold;
 }
 .box_words_line2 {
-  font-size: 15px;
+  font-size: 14px;
 }
 .box_line2 {
   text-align: left;
@@ -158,6 +159,7 @@
 .star_img {
   position: relative;
   padding: 0;
+  transform: translate(0, 50%);
 }
 .box_line2 p {
   position: relative;
@@ -170,9 +172,11 @@
 }
 .box_line3 .red {
   color: red;
+  font-size: 12px;
 }
 .box_line3 .black {
   color: black;
+  font-size: 12px;
 }
 .box_line3 p {
   color: #b8b8b8;
@@ -212,7 +216,40 @@
   color: red;
 }
 .box_line6 p {
+  width: 115%;
+  padding-left: 15px;
   padding-right: 0;
-  font-size: 10px;
+  font-size:12px;
+  -webkit-transform: scale(0.85);
+  -webkit-transform-origin:0 0;
   color: #b8b8b8;
+}
+.box:hover +.hover_div,
+.hover_div:hover {
+  display: inherit;
+}
+.hover_div {
+  position: absolute;
+  height: 460px;
+  margin-top: 30px;
+  padding-left: 0;
+  display: none;
+}
+.hover_box {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+}
+.hover_words {
+  padding-left: 0;
+}
+.hover_line1 {
+  margin-top: 80px;
+}
+.hover_line2 {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: left;
+  text-indent:2em;
 }
