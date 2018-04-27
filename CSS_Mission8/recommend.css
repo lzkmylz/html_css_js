@@ -52,6 +52,10 @@
   border-bottom: 5px solid #fff;
 }
 .logo_img {
+  position: relative;
+  width: 118px;
+  height: 67px;
+  top: 10px;
   padding-left: 0;
 }
 

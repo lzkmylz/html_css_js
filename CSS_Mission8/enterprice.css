@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row1 {
+  background-color: #fff;
+}
+.tel_words {
+  position: relative;
+  color: green;
+  transform: translate(0, 50%);
+}
+.tel_words_div {
+  padding-left: 0;
+}
+.row1_phone,
+.row1_qq,
+.row1_wechat {
+  float: right;
+}
+
+.navbar {
+  border: 0;
+  margin-bottom: 0;
+  background-color: #29b078;
+  text-align: center;
+}
+.nav-header {
+  position: relative;
+  margin: 0 -15px;
+}
+.nav_header_link {
+  position: relative;
+  height: 86px;
+  margin-bottom: 0;
+}
+.nav_header_link li {
+  list-style: none;
+}
+.nav_header_link li a {
+  position: relative;
+  height: 86px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  line-height: 82px;
+  text-decoration: none;
+}
+.nav_header_link li a:hover {
+  border-bottom: 5px solid #fff;
+}
+.logo_img {
+  position: relative;
+  width: 118px;
+  height: 67px;
+  top: 10px;
+  padding-left: 0;
+}
