@@ -33,6 +33,7 @@
   position: relative;
   height: 86px;
   margin-bottom: 0;
+  padding-right: 0;
 }
 .nav_header_link li {
   list-style: none;
@@ -43,7 +44,7 @@
   padding-right: 0;
   display: inline-block;
   font-size: 16px;
-  text-align: right;
+  text-align: center;
   color: white;
   line-height: 82px;
   text-decoration: none;
