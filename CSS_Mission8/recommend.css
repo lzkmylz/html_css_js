@@ -41,9 +41,10 @@
 .nav_header_link li a {
   position: relative;
   height: 86px;
+  padding-right: 0;
   display: inline-block;
   font-size: 16px;
-  text-align: center;
+  text-align: right;
   color: white;
   line-height: 82px;
   text-decoration: none;
