@@ -87,9 +87,6 @@
   text-align: left;
   color: #dddddd;
 }
-.connection {
-  border-right: 1px dashed #dedede;
-}
 .study {
   height: 180px;
 }
@@ -103,6 +100,10 @@
   text-align: left;
 }
 .study_content {
+  height: 100%;
+  border-left: 1px dashed #dedede;
+}
+.study_content .row {
   position: relative;
   top: 45px;
 }
@@ -140,11 +141,15 @@
 }
 .step_circle p {
   position: relative;
-  transform: translate(0, 50%);
+  top: 12.5px;
   color: green;
   font-weight: bold;
 }
 .step_words {
+  position: relative;
+  top: 12.5px;
+  padding-right: 0;
+  font-size: 12px;
   color: #a8a8a8;
 }
 .step_img {
@@ -276,43 +281,35 @@
   border-bottom: 1px solid white;
   color: white;
 }
-.line1 p {
-  padding: 0;
+
+.footerbody_left,
+.footerbody_right {
+  position: relative;
+  right: 45px;
   text-align: left;
 }
-.line2 p {
-  padding: 0;
-  text-align: left;
+.footerbody_left p,
+.footerbody_right p {
+  margin-bottom: 20px;
 }
-.line3_left p {
-  padding: 0;
+.foterbody_left_contact {
+  position: relative;
+  top: 40px;
 }
-.line3_left {
-  padding-left: 0;
+.footerbody_left a,
+.footerbody_right a {
+  text-decoration: none;
+  color: white;
 }
-.line3_right {
-  text-align: left;
-  padding: 0;
+.footerbody_left a:hover {
+  text-decoration: underline;
 }
-.line3_right p {
-  padding: 0;
+.footerbody_right a:hover {
+  text-decoration: underline;
 }
-.aboutus,
-.contactus {
-  border-right: 1px solid #fff;
-}
-.aboutus {
-  text-align: left;
-}
-.contactus,
-.hezuoenter {
-  text-align: center;
-}
-.pttgame {
-  padding-left: 0;
-}
-.line3 {
-  padding-bottom: 20px;
+.footerbody_left_title,
+.footerbody_right_title {
+  font-size: 16px;
 }
 .weixin_box {
   margin-right: 10%;
