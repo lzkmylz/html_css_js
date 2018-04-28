@@ -129,3 +129,33 @@
   color: #65c096;
   font-weight: bold;
 }
+
+.mainbody_right_row {
+  border-left: 1px solid #eeeded;
+  border-right: 1px solid #eeeded;
+  background-color: #fff;
+}
+.enterprice_intro_title {
+  border-top: 1px solid #eeeded;
+  border-bottom: 1px solid #eeeded;
+}
+.tudou_logo_div {
+  padding: 0;
+}
+.tudou_img {
+  position: relative;
+  top: 55px;
+  padding: 0;
+  transform: translate(0, -50%);
+}
+.tudou_intro,
+.maibody_p {
+  color: #c3c3c3;
+}
+.mainbody_right_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mainbody_right_line {
+  margin-top: 20px;
+}
