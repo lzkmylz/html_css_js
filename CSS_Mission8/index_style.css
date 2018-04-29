@@ -3,9 +3,10 @@
   margin: 0;
 }
 
-.row1 {
+.page_background_color {
   background-color: #fff;
 }
+
 .tel_words {
   position: relative;
   color: green;
@@ -348,4 +349,12 @@
 .beian {
   float: left;
   padding-left: 5px;
+}
+
+/* TODO: 清除small添加的 */
+.small-header {
+  display: none;
+}
+.small_header_img {
+  display: none;
 }

@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+.row1 {
+  display: none;
+  color: green;
+}
+.small-header p {
+  position: relative;
+  top: 7px;
+  text-align: right;
+}
+.small-header p a {
+  color: black;
+  text-decoration: none;
+}
+.small-header p span {
+  color: green;
+  font-size: 16px;
+}
+.nav_header_link {
+  display: none;
+}
+.nav-header,
+.navbar {
+  border: 0;
+  background-color: #29b078;
+}
+.small_header_img {
+  position: relative;
+  top: 30px;
+}

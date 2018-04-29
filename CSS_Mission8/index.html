@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.css">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="bootstrap-3.3.7-dist\js\bootstrap.js"></script>
-    <link rel="stylesheet" href="index_style.css" type="text/css">
+    <link rel="stylesheet" href="index_style.css" type="text/css" media="all and (min-width:1024px)">
+    <link rel="stylesheet" href="index_small.css" type="text/css" media="all and (max-width:1023px)">
   </head>
 
   <body class="Site">
     <!--首先制作header-->
     <div class="container-fluid">
-      <div class="row row1">
-        <div class="col-md-8 col-md-push-2">
-          <div class="col-md-3">
+      <div class="row page_background_color">
+        <div class="col-md-8 col-md-push-2 row1">
+          <div class="col-md-6">
             <p class="tel_words">客服热线：010-594-78634</p>
           </div>
 
-          <div class="col-md-2 pull-right">
+          <div class="col-md-6 pull-right">
             <a href="#">
               <img src="images/shape01.jpg" alt="phone" class="row1_phone">
             </a>
@@ -31,6 +32,11 @@
               <img src="images/shape03.jpg" alt="wechat" class="row1_wechat">
             </a>
           </div>
+
+        </div>
+        <!-- TODO: small专用 -->
+        <div class="col-xs-6 col-xs-push-6 small-header">
+          <p class="col-xs-12"><a href="#">登录</a>&#160;<span>|</span>&#160;<a href="#">注册</a></p>
         </div>
       </div>
 
@@ -54,6 +60,9 @@
                 <a href="#" class="col-xs-3">关于</a>
               </li>
             </ul>
+
+            <!-- TODO: small 专用 -->
+            <img src="images/shape25.jpg" alt="small_header_img" class="small_header_img">
           </div>
 
         </nav>
