@@ -132,6 +132,12 @@
   color: #65c096;
   font-weight: bold;
 }
+.enterprice_box {
+  padding: 0;
+}
+.enterprice_box:hover .circle_hollow {
+  background-color: #ff7628;
+}
 
 .mainbody_right_row {
   border-left: 1px solid #eeeded;

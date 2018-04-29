@@ -131,9 +131,11 @@
   background-color: #fafafa;
 }
 .step_box {
-  padding: 0;
+  float: left;
+  width: 16.7vw;
 }
 .step_circle {
+  float: left;
   width: 50px;
   height: 50px;
   border: 1px solid #ececec;
@@ -143,21 +145,31 @@
 }
 .step_circle p {
   position: relative;
-  top: 12.5px;
+  top: 50%;
+  transform: translate(0, -50%);
   color: green;
   font-weight: bold;
 }
 .step_words {
+  float: left;
   position: relative;
-  top: 12.5px;
+  top: 12px;
+  width: 8.4vw;
   padding-right: 0;
+  padding-left: 15px;
   font-size: 12px;
   color: #a8a8a8;
 }
 .step_img {
-  width: 40px;
-  height: 40px;
+  float: left;
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 30px;
   padding: 0;
+}
+.margin_left {
+  margin-left: 15px;
 }
 
 .students_show {
@@ -242,6 +254,9 @@
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
+}
+.img_box:hover {
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .friend_link {
