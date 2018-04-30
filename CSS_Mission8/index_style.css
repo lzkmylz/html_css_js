@@ -52,6 +52,12 @@
   float: right;
   right: 16.66%;
 }
+.sm_logo {
+  display: none;
+}
+.clear {
+  display: none;
+}
 
 .slide {
   margin: 0 -15px;
