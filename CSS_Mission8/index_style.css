@@ -30,28 +30,27 @@
   margin: 0 -15px;
   background-color: #29b078;
 }
-.nav_header_link {
+.navbar-default .navbar-nav > li {
+}
+.navbar-default .navbar-nav > li > a {
+  padding: 15px 15px 0 15px;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > div {
   position: relative;
-  height: 86px;
-  margin-bottom: 0;
-  padding-right: 0;
+  top: 10px;
+  padding-bottom: 5px;
 }
-.nav_header_link li {
-  list-style: none;
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: transparent;
 }
-.nav_header_link li a {
-  position: relative;
-  height: 86px;
-  padding-right: 0;
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  line-height: 82px;
-  text-decoration: none;
+.navbar-default .navbar-nav > li:hover div {
+  background-color: #fff;
 }
-.nav_header_link li a:hover {
-  border-bottom: 5px solid #fff;
+.navbar-collapse {
+  float: right;
+  right: 16.66%;
 }
 
 .slide {
