@@ -131,11 +131,6 @@
   background-color: #fafafa;
   text-align: center;
 }
-.howtolearn {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 .learn1_4,
 .learn5_8 {
@@ -189,11 +184,6 @@
   padding: 40px 0;
   text-align: center;
 }
-.students_show_p {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 .student_pictures {
   background-color: #fafafa;
@@ -214,6 +204,9 @@
 .student_words {
   text-align: left;
   color: #b0b0b0;
+}
+.student_pictures_small {
+  display: none;
 }
 
 .point {
@@ -245,11 +238,6 @@
   padding: 80px 0 40px 0;
   text-align: center;
 }
-.enterprice_p {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
 
 .enterprice_pictures  {
   background-color: #fafafa;
@@ -274,12 +262,6 @@
 .friend_link {
   background-color: #fff;
   text-align: center;
-}
-.friend_link p {
-  margin-top: 20px;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .link_line {

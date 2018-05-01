@@ -158,3 +158,27 @@
   padding: 70px 0 60px 0;
   text-align: center;
 }
+
+.learn_row,
+.learn1_4,
+.learn5_8 {
+  display: none;
+}
+
+.students_show {
+  text-align: center;
+}
+.student_pictures {
+  display: none;
+}
+.student_pictures_row {
+  border: 1px solid #e8e8e8;
+  margin: 20px 0 20px 0;
+}
+.student_box {
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+.student_words {
+  text-align: left;
+}
