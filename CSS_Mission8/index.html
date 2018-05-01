@@ -10,6 +10,34 @@
     <script type="text/javascript" src="bootstrap-3.3.7-dist\js\bootstrap.js"></script>
     <link rel="stylesheet" href="index_style.css" type="text/css" media="all and (min-width:1024px)">
     <link rel="stylesheet" href="index_small.css" type="text/css" media="all and (max-width:1023px)">
+    <script type="text/javascript">
+      $(window).resize(function() {
+        var height = $(window).height();
+        var width = $(window).width();
+        var navbar_collapse_width = $(".navbar-collapse").width();
+        if (width < 1024) {
+          if (navbar_collapse_width != -30) {
+            $(".navbar-collapse").css({"right":width - navbar_collapse_width - 15});
+          }
+          else {
+            $(".navbar-collapse").css({"right":width - 75});
+          }
+        }
+      });
+      $(document).ready(function(){
+        var height = $(window).height();
+        var width = $(window).width();
+        var navbar_collapse_width = $(".navbar-collapse").width();
+        if (width < 1024) {
+          if (navbar_collapse_width != -30) {
+            $(".navbar-collapse").css({"right":width - navbar_collapse_width - 15});
+          }
+          else {
+            $(".navbar-collapse").css({"right":width - 75});
+          }
+        }
+      });
+    </script>
   </head>
 
   <body class="Site">
