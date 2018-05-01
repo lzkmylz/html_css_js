@@ -75,6 +75,9 @@
 .caption_line2_right {
   font-size: 25px;
 }
+.small_caption_box {
+  display: none;
+}
 
 .advantages {
   text-align: center;

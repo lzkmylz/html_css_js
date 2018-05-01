@@ -2,7 +2,18 @@
   padding: 0;
   margin: 0;
 }
-
+.backgroundcolor_white {
+  background-color: #fff;
+}
+.fontcolor_white {
+  color: #fff;
+}
+.fontcolor_black {
+  color: black;
+}
+.underline {
+  text-decoration: underline;
+}
 
 .navbar {
   margin-bottom: 0;
@@ -111,4 +122,28 @@
   display: block;
   height: 40px;
   max-width: 220px;
+}
+
+.caption_box {
+  display: none;
+}
+.small_caption_box p {
+  position: relative;
+  width: 144px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 0;
+  text-align: left;
+}
+@media (min-width: 426px) and (max-width: 1023px) {
+  .small_caption_box {
+    bottom: 50%;
+    transform: translate(0, 50%);
+    font-size: 2rem;
+  }
+  .small_caption_box p {
+    position: relative;
+    width: 288px;
+    left: 62.5%;
+  }
 }
