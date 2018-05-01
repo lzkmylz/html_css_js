@@ -11,6 +11,9 @@
 .fontcolor_black {
   color: black;
 }
+.fontcolor_999999 {
+  color: #999999;
+}
 .underline {
   text-decoration: underline;
 }
@@ -117,7 +120,7 @@
   padding-top: 40px;
 }
 .sm_logo {
-  position: fixed;
+  position: absolute;
   left: 15px;
   display: block;
   height: 40px;
@@ -146,4 +149,12 @@
     width: 288px;
     left: 62.5%;
   }
+}
+
+.advantages {
+  display: none;
+}
+.advertise_imgbox {
+  padding: 70px 0 60px 0;
+  text-align: center;
 }

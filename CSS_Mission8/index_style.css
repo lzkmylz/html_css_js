@@ -123,6 +123,9 @@
   font-weight: bold;
   color: #65b691;
 }
+.advertise_small {
+  display: none;
+}
 
 .learn_row {
   background-color: #fafafa;
