@@ -8,19 +8,58 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.css">
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="bootstrap-3.3.7-dist\js\bootstrap.js"></script>
-    <link rel="stylesheet" href="enterprice.css" type="text/css">
+    <link rel="stylesheet" href="enterprice.css" type="text/css" media="all and (min-width:1024px)">
+    <link rel="stylesheet" href="enterprice_small.css" type="text/css" media="all and (max-width:1023px)">
+    <script type="text/javascript">
+      $(window).resize(function() {
+        var height = $(window).height();
+        var width = $(window).width();
+        var navbar_collapse_width = $(".navbar-collapse").width();
+        if (width < 1024) {
+          if (navbar_collapse_width != -30) {
+            $(".navbar-collapse").css({"right":width - navbar_collapse_width - 15});
+          }
+          else {
+            $(".navbar-collapse").css({"right":width - 75});
+          }
+        }
+        else {
+          if ($(".navbar-collapse").css("right") != "16.666667%") {
+            $(".navbar-collapse").css({"right": "16.666667%"});
+          }
+        }
+      });
+      $(document).ready(function(){
+        var height = $(window).height();
+        var width = $(window).width();
+        var navbar_collapse_width = $(".navbar-collapse").width();
+        if (width < 1024) {
+          if (navbar_collapse_width != -30) {
+            $(".navbar-collapse").css({"right":width - navbar_collapse_width - 15});
+          }
+          else {
+            $(".navbar-collapse").css({"right":width - 75});
+          }
+        }
+        else {
+          if ($(".navbar-collapse").css("right") != "16.666667%") {
+            $(".navbar-collapse").css({"right": "16.666667%"});
+          }
+        }
+      });
+    </script>
   </head>
 
   <body class="Site">
     <!--首先制作header-->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8 col-md-push-2">
-          <div class="col-md-3 tel_words_div">
+      <div class="row page_background_color">
+        <div class="col-md-8 col-md-push-2 row1">
+          <div class="col-md-6">
             <p class="tel_words">客服热线：010-594-78634</p>
           </div>
 
-          <div class="col-md-2 pull-right">
+          <div class="col-md-6 pull-right">
             <a href="#">
               <img src="images/shape01.jpg" alt="phone" class="row1_phone">
             </a>
@@ -31,31 +70,40 @@
               <img src="images/shape03.jpg" alt="wechat" class="row1_wechat">
             </a>
           </div>
+
+        </div>
+        <!-- TODO: small专用 -->
+        <div class="col-xs-6 col-xs-push-6 small-header">
+          <p class="col-xs-12"><a href="#">登录</a>&#160;<span>|</span>&#160;<a href="#">注册</a></p>
         </div>
       </div>
 
-      <div class="nav-header nav">
-        <nav class="navbar navbar-default">
-          <div class="col-md-8 col-md-push-2">
-            <img src="images/shape22.jpg" alt="jns_logo" class="logo_img col-md-2">
-            <ul class="nav_header_link col-md-4 pull-right">
-              <li>
-                <a href="./index.html" class="col-xs-3">首页</a>
-              </li>
+      <div class="nav-header">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
 
-              <li>
-                <a href="./recommand.html" class="col-xs-3">职业</a>
-              </li>
+            <img src="images/shape25.jpg" alt="sm_logo" class="sm_logo">
+            <img src="images/shape22.jpg" alt="jns_logo" class="logo_img col-md-2 col-md-push-2">
+            <div class="navbar-header col-xs-2 col-xs-push-10">
+              <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse col-md-4 col-xs-4" id="example-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">首页</a><div></div></li>
+                <li><a href="recommend.html">职业</a><div></div></li>
+                <li><a href="enterprice.html">推荐</a><div></div></li>
+                <li><a href="#">关于</a><div></div></li>
+              </ul>
+            </div>
 
-              <li>
-                <a href="#" class="col-xs-3">推荐</a>
-              </li>
-
-              <li>
-                <a href="#" class="col-xs-3">关于</a>
-              </li>
-            </ul>
           </div>
+
           <div class="col-md-12 header_adv">
             <div class="col-md-8 col-md-push-2">
               <img src="images/shape23.jpg" alt="header_adv_img" class="header_adv_img col-md-12">
@@ -183,7 +231,7 @@
                   <div class="enterprice_box col-md-12">
                     <div class="circle_hollow"></div>
                     <span class="enterprice_name">阿里巴巴</span>
-                  </div>                  
+                  </div>
                 </div>
               </div>
 

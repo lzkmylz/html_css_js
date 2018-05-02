@@ -1,18 +1,16 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.row1 {
+.page_background_color {
   background-color: #fff;
 }
+
 .tel_words {
   position: relative;
   color: green;
   transform: translate(0, 50%);
-}
-.tel_words_div {
-  padding-left: 0;
 }
 .row1_phone,
 .row1_qq,
@@ -20,6 +18,7 @@
   float: right;
 }
 
+.navbar-header,
 .navbar {
   border: 0;
   margin-bottom: 0;
@@ -29,36 +28,40 @@
 .nav-header {
   position: relative;
   margin: 0 -15px;
+  background-color: #29b078;
 }
-.nav_header_link {
+.navbar-default .navbar-nav > li {
+}
+.navbar-default .navbar-nav > li > a {
+  padding: 15px 15px 0 15px;
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > div {
   position: relative;
-  height: 86px;
-  margin-bottom: 0;
-  padding-right: 0;
+  top: 10px;
+  padding-bottom: 5px;
 }
-.nav_header_link li {
-  list-style: none;
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: transparent;
 }
-.nav_header_link li a {
-  position: relative;
-  height: 86px;
-  padding-right: 0;
-  display: inline-block;
-  font-size: 16px;
-  text-align: center;
-  color: white;
-  line-height: 82px;
-  text-decoration: none;
+.navbar-default .navbar-nav > li:hover div {
+  background-color: #fff;
 }
-.nav_header_link li a:hover {
-  border-bottom: 5px solid #fff;
+.navbar-collapse {
+  float: right;
+  right: 16.66%;
+}
+.sm_logo {
+  display: none;
+}
+.clear {
+  display: none;
 }
 .logo_img {
   position: relative;
   width: 118px;
   height: 67px;
-  top: 10px;
-  padding-left: 0;
 }
 .header_adv {
   background-color: #f1a750;
@@ -242,4 +245,15 @@
 .beian {
   float: left;
   padding-left: 5px;
+}
+
+/* TODO: 清除small添加的 */
+.small-header {
+  display: none;
+}
+.small_header_img {
+  display: none;
+}
+.footer_body_small {
+  display: none;
 }
