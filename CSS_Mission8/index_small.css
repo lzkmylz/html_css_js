@@ -177,3 +177,44 @@
 .student_words {
   text-align: left;
 }
+
+.point {
+  display: none;
+}
+
+.enterprice {
+  text-align: center;
+}
+.enterprice_pictures {
+  text-align: center;
+}
+.img_box {
+  margin: 20px 0 20px 0;
+}
+
+.friend_link {
+  text-align: center;
+}
+.link_line {
+  margin-left: 15px;
+}
+.link_line2 {
+  margin: 0 0 20px 15px;
+}
+
+.footer_body {
+  display: none;
+}
+.footer_body_small {
+  margin-top: 20px;
+  color: #fff;
+}
+.footer_body_small a {
+  color: #fff;
+}
+.weixin2w_img {
+  margin-bottom: 20px;
+}
+.copyright {
+  margin: 20px 15px 0 15px;
+}
