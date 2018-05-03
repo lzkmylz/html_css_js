@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 .backgroundcolor_white {
   background-color: #fff;
@@ -17,6 +18,7 @@
 .underline {
   text-decoration: underline;
 }
+
 
 .navbar {
   margin-bottom: 0;
@@ -129,4 +131,62 @@
 }
 .logo_img {
   display: none;
+}
+
+.line1 p {
+  padding: 15px;
+}
+
+.mainbody {
+  background-color: #fafafa;
+}
+.mainbody_left_row {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+}
+.mainbody_title_p {
+  padding: 30px 0 10px 0;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: bold;
+}
+.circle_hollow {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ff7628;
+}
+.circle_solid {
+  position: relative;
+  float: left;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #ff7628;
+  background-color: #ff7628;
+}
+.enterprice_name {
+  float: left;
+}
+.enterprice_box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  float: left;
+  width: 90px;
+}
+.enterprice_row1 {
+  padding: 10px 0 10px 0;
+}
+.enterprice_row {
+  padding: 10px 0 10px 0;
+}
+.enterprice_name_actived {
+  color: #ff7628
 }

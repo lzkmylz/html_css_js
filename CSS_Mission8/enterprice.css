@@ -24,6 +24,7 @@
   margin-bottom: 0;
   background-color: #29b078;
   text-align: center;
+  overflow-x: hidden;
 }
 .nav-header {
   position: relative;
