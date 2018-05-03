@@ -92,6 +92,10 @@
   .navbar-default .navbar-header {
     padding-right: 15px;
   }
+  .link_line,
+  .link_line2 {
+    left: 0;
+  }
 }
 .navbar-collapse {
   float: right;
@@ -189,9 +193,17 @@
   text-align: center;
 }
 .img_box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 186px;
+  height: 65px;
   margin: 20px 0 20px 0;
 }
-.img_box img:hover {
+.img_box img {
+  max-width: 100%;
+}
+.img_box:hover {
   box-shadow: 10px 10px 5px #888888;
 }
 
