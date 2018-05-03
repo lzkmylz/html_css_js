@@ -191,6 +191,9 @@
 .img_box {
   margin: 20px 0 20px 0;
 }
+.img_box img:hover {
+  box-shadow: 10px 10px 5px #888888;
+}
 
 .friend_link {
   text-align: center;

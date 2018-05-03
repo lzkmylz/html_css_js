@@ -254,6 +254,7 @@
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
+  max-width: 100%;
 }
 .img_box:hover {
   box-shadow: 10px 10px 5px #888888;

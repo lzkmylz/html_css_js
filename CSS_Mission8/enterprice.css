@@ -136,6 +136,11 @@
   font-weight: bold;
 }
 .enterprice_box {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  float: left;
+  width: 90px;
   padding: 0;
 }
 .enterprice_box:hover .circle_hollow {
