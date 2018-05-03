@@ -180,6 +180,7 @@
   transform: translate(-50%, 0);
   float: left;
   width: 90px;
+  color: #65c096;
 }
 .enterprice_row1 {
   padding: 10px 0 10px 0;
@@ -189,4 +190,46 @@
 }
 .enterprice_name_actived {
   color: #ff7628
+}
+
+.mainbody_right {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+.enterprice_intro_title {
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.mainbody_right_row {
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+.tudou_logo_div {
+  padding: 20px 15px 20px 15px;
+  text-align: center;
+}
+.tudou_intro,
+.maibody_p {
+  text-indent:2em;
+}
+
+.footer_body {
+  display: none;
+}
+.footer_body_small {
+  margin-top: 20px;
+  color: #fff;
+}
+.footer_body_small a {
+  color: #fff;
+}
+.weixin2w_img {
+  margin-bottom: 20px;
+}
+.copyright {
+  margin: 20px 15px 0 15px;
 }
