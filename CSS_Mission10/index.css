@@ -44,13 +44,40 @@
   color: black;
   background-color: #fff;
 }
+.header_right {
+  float: right;
+  width: 155px;
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+@media (max-width:424px) {
+  .telcall {
+    float: left;
+    width: 100px;
+    padding: 0 15px 0 15px;
+    margin-bottom: 10px;
+  }
+  .header_right {
+    float: right;
+    width: 90px;
+    margin-bottom: 0;
+  }
+  .sign_in {
+    padding: 25px 0 25px 0;
+  }
+  .register {
+    padding: 25px 0 25px 0;
+  }
+}
+
 
 .header_buttons {
+  min-width: 350px;
   padding: 20px 0 20px 0;
   text-align: center;
 }
 .header_link {
-  padding: 10px 15px 10px 15px;
+  padding: 10px 0 10px 0;
   background-color: #fff;
 }
 .activated_header_link {
@@ -58,4 +85,21 @@
 }
 .activated_header_link a {
   color: #fff;
+}
+.ensure {
+  padding-right: 0;
+}
+@media (max-width:768px) {
+  .header_buttons {
+    min-width: 175px;
+    width: 175px;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+  .header_link_div {
+    width: 50%;
+  }
+  .ensure {
+    padding-right: 15px;
+  }
 }
