@@ -11,17 +11,38 @@
 .color_black {
   color: black;
 }
+.color_ff7f02 {
+  color: #ff7f02;
+}
+.color_cccccc {
+  color: #cccccc;
+}
 .margin_bottom0 {
   margin-bottom: 0;
 }
 .border0 {
   border: 0;
 }
+.borderright_cccccc {
+  border-right: 1px solid #cccccc;
+}
+.bordertop_cccccc {
+  border-top: 1px solid #cccccc;
+}
 .padding0 {
   padding: 0;
 }
+.padding_right0 {
+  padding-right: 0;
+}
 .backgroundcolor_f9f9f9 {
   background-color: #f9f9f9;
+}
+.backgroundcolor_ff7f02 {
+  background-color: #ff7f02;
+}
+.backgroundcolor_cccccc {
+  background-color: #cccccc;
 }
 
 .telcall {
@@ -59,7 +80,7 @@
   }
   .header_right {
     float: right;
-    width: 90px;
+    width: 105px;
     margin-bottom: 0;
   }
   .sign_in {
@@ -107,5 +128,49 @@
   }
   .ensure {
     padding-right: 15px;
+  }
+}
+
+.step_row {
+  float: right;
+  padding: 20px 0 20px 0;
+}
+.step_img {
+  width: 161px;
+  height: 40px;
+}
+.step_img_div {
+  float: left;
+  text-align: center;
+}
+.step_row_small {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .step_row {
+    display: none;
+  }
+  .step_row_small {
+    margin: 20px 0 20px 0;
+    display: inherit;
+    border: 1px solid #cccccc;
+  }
+  .step_box {
+    padding: 0;
+    text-align: center;
+  }
+  .circle {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 20px 0;
+    border-radius: 50%;
+  }
+  .circle p {
+    position: relative;
+    top: 5px;
+    margin-bottom: 0;
   }
 }
