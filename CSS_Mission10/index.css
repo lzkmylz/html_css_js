@@ -219,6 +219,7 @@
 .detail_box {
   float: right;
   padding: 0 10px 0 10px;
+  border: 1px solid #cccccc;
   background-color: #fff;
 }
 .detail_p {
@@ -230,4 +231,28 @@
 }
 .detail_img {
   float: left;
+}
+.from_input {
+  position: relative;
+  top: 7.5px;
+}
+.from_input_p {
+  float: left;
+  margin-bottom: 0;
+}
+.from_input_area {
+  float: left;
+  width: 40px;
+  height: 20px;
+  margin: 0 5px 0 5px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+.detail_box_boxsize {
+  position: relative;
+  float: right;
+  top: 14px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #cccccc;
+  background-color: #fff;
 }
