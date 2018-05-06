@@ -51,6 +51,40 @@
   background-color: #f2f2f2;
 }
 
+/* TODO: input style */
+input[type="radio"] {
+  position: absolute;
+  float: left;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  z-index: 99;
+}
+label {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #999;
+}
+input:checked+label {
+  background-color: #1d7ad9;
+  border: 1px solid #1d7ad9;
+}
+input:checked+label::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
 .telcall {
   float: left;
   width: 200px;
@@ -206,14 +240,11 @@
   padding: 20px 0 20px 0;
   background-color: #fbfcff;
 }
-.from_choice_img {
-  float: left;
-}
 .from_choice_p {
   position: relative;
   float: left;
   top: 7.5px;
-  margin-left: 5px;
+  margin-left: 20px;
   margin-bottom: 0;
 }
 .detail_box {
@@ -240,13 +271,11 @@
   float: left;
   margin-bottom: 0;
 }
-.from_input_area {
+.size_datainput {
   float: left;
   width: 40px;
-  height: 20px;
-  margin: 0 5px 0 5px;
-  border: 1px solid #cccccc;
-  background-color: #fff;
+  margin: 0 10px 0 10px;
+  border: 1px solid #999;
 }
 .detail_box_boxsize {
   position: relative;
@@ -273,7 +302,17 @@
   background-color: red;
   text-align: center;
 }
-
+.material_row1 {
+  margin-bottom: 20px;
+}
+.select-style {
+  width: 10rem;
+  background-image: url("images/shape12.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  -webkit-appearance: none;
+  color: #cccccc;
+}
 
 .navbar-bottom {
   position: absolute;
