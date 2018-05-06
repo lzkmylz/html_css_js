@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.backgroundcolor_1d7ad9 {
-  background-color: #1d7ad9;
-}
 .color_fff {
   color: #fff;
 }
@@ -17,26 +14,11 @@
 .color_cccccc {
   color: #cccccc;
 }
-.margin_bottom0 {
-  margin-bottom: 0;
-}
-.border0 {
-  border: 0;
-}
 .borderright_cccccc {
   border-right: 1px solid #cccccc;
 }
 .bordertop_cccccc {
   border-top: 1px solid #cccccc;
-}
-.padding0 {
-  padding: 0;
-}
-.padding_right0 {
-  padding-right: 0;
-}
-.padding_left0 {
-  padding-left: 0;
 }
 .backgroundcolor_f9f9f9 {
   background-color: #f9f9f9;
@@ -50,6 +32,25 @@
 .backgroundcolor_f2f2f2 {
   background-color: #f2f2f2;
 }
+.backgroundcolor_1d7ad9 {
+  background-color: #1d7ad9;
+}
+.padding0 {
+  padding: 0;
+}
+.padding_right0 {
+  padding-right: 0;
+}
+.padding_left0 {
+  padding-left: 0;
+}
+.margin_bottom0 {
+  margin-bottom: 0;
+}
+.border0 {
+  border: 0;
+}
+
 
 /* TODO: input style */
 input[type="radio"] {
@@ -326,7 +327,6 @@ input:checked+label::after {
   margin-left: 10px;
 }
 .copyright {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
   background-color: #1d7ad9;
 }
