@@ -280,7 +280,7 @@ input:checked+label::after {
   background-color: red;
   text-align: center;
 }
-.material_row1 {
+.size_row1 {
   margin-bottom: 20px;
 }
 .select-style {
@@ -293,6 +293,91 @@ input:checked+label::after {
   background-position-x: 100%;
   -webkit-appearance: none;
   color: #cccccc;
+}
+.size_select {
+  top: 17.5px;
+}
+@media (max-width: 1023px) {
+  .boxstyle_radio {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .size_row1 {
+    width: 150px;
+    margin-right: 0;
+  }
+  .material_row {
+    width: 150px;
+  }
+  .material_box {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .outer_radio,
+  .inner_radio {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .from_input {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .size_select {
+    top: 189px;
+  }
+  .box_select {
+    top: 40px;
+  }
+  .material_select {
+    top: 100px;
+  }
+  .next_step {
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .footerbody_leftp {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 424px) {
+  .boxstyle_radiobox {
+    width: 100%;
+  }
+  .box_select {
+    float: left;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .size_select {
+    float: left;
+    top: 0;
+    margin-left: 30px;
+  }
+  .size_radiobox {
+    width: 100%;
+  }
+  .size_row1 {
+    width: 100%;
+  }
+  .material_row {
+    width: 100%;
+  }
+  .material_select {
+    float: left;
+    margin-top: 40px;
+    top: 0;
+    margin-left: 30px;
+  }
 }
 
 .navbar-bottom {
