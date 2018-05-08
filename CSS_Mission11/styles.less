@@ -4,6 +4,7 @@
   font-size: 62.5%;
   font-family: PingFangSC-Regular, -apple-system, Simsun;
 }
+@header_button_color: #5fc0cd;
 body {
   background-color: #eff0f4;
 }
@@ -19,11 +20,14 @@ color: #999;
 :-ms-input-placeholder { /* Internet Explorer 10+ */
 color: #999;
 }
+.float_left_width_100 {
+  float: left;
+  width: 100%;
+}
 
 .header {
-  width: 100%;
-  background-color: #5fc0cd;
-  float: left;
+  .float_left_width_100;
+  background-color: @header_button_color;
   margin-bottom: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -59,9 +63,8 @@ color: #999;
 }
 
 .phone_input {
-  width: 100%;
+  .float_left_width_100;
   background-color: #ffffff;
-  float: left;
   max-width: 100%;
   margin-bottom: 5%;
 
@@ -90,9 +93,8 @@ color: #999;
 }
 
 .code_input {
-  width: 100%;
+  .float_left_width_100;
   background-color: #ffffff;
-  float: left;
   max-width: 100%;
   margin-bottom: 5%;
 
@@ -121,9 +123,8 @@ color: #999;
 }
 
 .bottom_login {
-  width: 100%;
-  background-color: #5fc0cd;
-  float: left;
+  .float_left_width_100;
+  background-color: @header_button_color;
   margin-bottom: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -141,6 +142,6 @@ color: #999;
 .forget_code {
   float: right;
   right: 5%;
-  color: #5fc0cd;
+  color: @header_button_color;
   font-size: 2.5rem;
 }
