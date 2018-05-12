@@ -5,7 +5,27 @@
     <title>Mission_12</title>
     <meta name="author" content="lzkmylz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="chose_style.css" type="text/css">
+
+    <script type="text/javascript">
+      $(function () {
+        $(".dropdown_btn_container").click(function(event){
+          event.stopPropagation();
+          if ($(this).children(".dropdown_btn_menu").css("display") == "none") {
+            $(this).children(".dropdown_btn_menu").addClass("display");
+          } else {
+            $(this).children(".display").removeClass("display");
+          }
+        });
+      });
+      $(function () {
+        $(document).click(function(){
+          console.log($(".dropdown_btn_menu .display").css("display"));
+          $(".dropdown_btn_menu.display").removeClass("display");
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -26,34 +46,43 @@
 
         <div class="header_select">
           <div class="dropdown_btn_div">
-            <button type="button" name="button" class="dropdown_btn">
-              所在地
-            </button>
-            <ul class="dropdown_btn_menu">
-              <li>海淀</li>
-              <li>朝阳</li>
-            </ul>
+            <div class="dropdown_btn_container">
+              <button type="button" name="button" class="dropdown_btn">
+                所在地
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown_btn_menu">
+                <li>海淀</li>
+                <li>朝阳</li>
+              </ul>
+            </div>
           </div>
           <img src="images/shape04.png" alt="separator" class="separator">
-          <div class="">
-            <button type="button" name="button" class="dropdown_btn">
-              食宿
-            </button>
-            <ul class="dropdown_btn_menu">
-              <li>自理</li>
-              <li>非自理</li>
-            </ul>
+          <div class="dropdown_btn_div">
+            <div class="dropdown_btn_container">
+              <button type="button" name="button" class="dropdown_btn">
+                食宿
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown_btn_menu">
+                <li>自理</li>
+                <li>非自理</li>
+              </ul>
+            </div>
           </div>
           <img src="images/shape04.png" alt="separator" class="separator">
-          <div class="">
-            <button type="button" name="button" class="dropdown_btn">
-              病人情况
-            </button>
-            <ul class="dropdown_btn_menu">
-              <li>良好</li>
-              <li>一般</li>
-              <li>严重</li>
-            </ul>
+          <div class="dropdown_btn_div">
+            <div class="dropdown_btn_container">
+              <button type="button" name="button" class="dropdown_btn">
+                病人情况
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown_btn_menu">
+                <li>良好</li>
+                <li>一般</li>
+                <li>严重</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
