@@ -11,6 +11,10 @@
   background-color: #b9e9f5 !important;
 }
 
+.padding_30 {
+  padding-top: 30px;
+}
+
 .btn {
   img {
     width: 100%;
@@ -95,7 +99,10 @@
   width: 100%;
   margin-left: -15px;
   margin-right: -15px;
+  margin-bottom: 100px;
+  padding-bottom: 70px;
   background-color: #29bde0;
+
 
   .row {
     padding-left: 15px;
@@ -165,4 +172,34 @@
     }
 
   }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #29bde0;
+  z-index: 99;
+
+  .footer_button {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #fbb435;
+    margin-left: 8.33333333%;
+    width: 83.33333333%;
+
+    .vote_div {
+      background-color: #fbb435;
+
+      .vote_p {
+        padding: 20px 0;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+
 }
