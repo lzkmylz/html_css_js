@@ -1,0 +1,148 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: #29bde0;
+}
+.btn img {
+  width: 100%;
+  height: 100%;
+}
+.mainbody_content {
+  position: relative;
+  width: 83.33333333%;
+  margin-left: 8.33333333%;
+}
+.paddingtop20 {
+  padding-top: 20px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: 15px;
+  z-index: 99;
+  border-bottom: 1px solid #fff;
+}
+.header .row {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 50px;
+  background-color: #29bde0;
+}
+.header .row .header_home_btn {
+  float: left;
+  height: 50px;
+}
+.header .row .header_title {
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -40px;
+  font-size: 20px;
+  color: #fff;
+}
+.header .row .header_help_btn {
+  float: right;
+  height: 50px;
+}
+.mainbody {
+  position: absolute;
+  top: 50px;
+  height: 100%;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: #29bde0;
+}
+.mainbody .row {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 20px;
+  background-color: #29bde0;
+}
+.mainbody .row .mainbody_vectory_p {
+  font-size: 20px;
+  color: #ffc865;
+  text-align: center;
+  line-height: 1.5;
+}
+.mainbody .row .game_result_p {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+.mainbody .row .game_result_detail_line1,
+.mainbody .row .game_result_detail_line2 {
+  text-align: left;
+  color: white;
+}
+.mainbody .row .game_result_detail_line1 .data_left .role,
+.mainbody .row .game_result_detail_line2 .data_left .role,
+.mainbody .row .game_result_detail_line1 .data_center .role,
+.mainbody .row .game_result_detail_line2 .data_center .role,
+.mainbody .row .game_result_detail_line1 .data_right .role,
+.mainbody .row .game_result_detail_line2 .data_right .role {
+  float: left;
+  position: relative;
+  letter-spacing: 14px;
+  font-size: 14px;
+}
+.mainbody .row .game_result_detail_line1 .data_left .data,
+.mainbody .row .game_result_detail_line2 .data_left .data,
+.mainbody .row .game_result_detail_line1 .data_center .data,
+.mainbody .row .game_result_detail_line2 .data_center .data,
+.mainbody .row .game_result_detail_line1 .data_right .data,
+.mainbody .row .game_result_detail_line2 .data_right .data {
+  float: left;
+  position: relative;
+  right: 14px;
+  font-size: 14px;
+}
+.mainbody .row .game_result_detail_line1 .data_left .role_long,
+.mainbody .row .game_result_detail_line2 .data_left .role_long,
+.mainbody .row .game_result_detail_line1 .data_center .role_long,
+.mainbody .row .game_result_detail_line2 .data_center .role_long,
+.mainbody .row .game_result_detail_line1 .data_right .role_long,
+.mainbody .row .game_result_detail_line2 .data_right .role_long {
+  float: left;
+  position: relative;
+  font-size: 14px;
+}
+.mainbody .row .game_result_detail_line1 .data_left .data_long,
+.mainbody .row .game_result_detail_line2 .data_left .data_long,
+.mainbody .row .game_result_detail_line1 .data_center .data_long,
+.mainbody .row .game_result_detail_line2 .data_center .data_long,
+.mainbody .row .game_result_detail_line1 .data_right .data_long,
+.mainbody .row .game_result_detail_line2 .data_right .data_long {
+  float: left;
+  position: relative;
+  font-size: 14px;
+}
+.mainbody .row .game_result_detail_line1 .data_left,
+.mainbody .row .game_result_detail_line2 .data_left {
+  float: left;
+  position: relative;
+  left: 0;
+  display: inline;
+}
+.mainbody .row .game_result_detail_line1 .data_center,
+.mainbody .row .game_result_detail_line2 .data_center {
+  float: left;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.mainbody .row .game_result_detail_line1 .data_right,
+.mainbody .row .game_result_detail_line2 .data_right {
+  float: right;
+}
+.mainbody .row .undercover_p {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
