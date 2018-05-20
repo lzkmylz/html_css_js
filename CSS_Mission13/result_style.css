@@ -18,6 +18,9 @@
 .paddingtop20 {
   padding-top: 20px;
 }
+.backgroundcolorfff {
+  background-color: #fff !important;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -145,4 +148,71 @@
   font-size: 14px;
   color: #fff;
   text-align: left;
+}
+.mainbody .row .game_detail_date {
+  float: left;
+  font-size: 20px;
+  color: #333;
+}
+.mainbody .row .game_detail_time {
+  float: right;
+  padding-top: 8px;
+  color: #e3e3e3;
+  font-size: 12px;
+}
+.mainbody .row .game_detail_line2,
+.mainbody .row .game_detail_line3 {
+  float: left;
+  margin-top: 10px;
+}
+.mainbody .row .game_detail_line2 .night,
+.mainbody .row .game_detail_line3 .night,
+.mainbody .row .game_detail_line2 .day,
+.mainbody .row .game_detail_line3 .day {
+  float: left;
+  color: #a6a6a6;
+}
+.mainbody .game_detail_row {
+  background-color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 14px;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(153, 223, 240, 0.5);
+  text-align: center;
+  z-index: 99;
+}
+.footer .row {
+  min-height: 20px;
+  height: 100%;
+}
+.footer .row .footer_btn_again {
+  float: left;
+  position: relative;
+  left: 8.33333333%;
+  width: 33.33333333%;
+  padding: 6px 12px 6px 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #f66f6f;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.footer .row .footer_btn_upload {
+  float: right;
+  position: relative;
+  right: 8.33333333%;
+  width: 33.33333333%;
+  padding: 6px 12px 6px 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #fbb435;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
