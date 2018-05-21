@@ -8,9 +8,67 @@
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="index_style.css" type="text/css">
+
+    <script type="text/javascript">
+      $(function() {
+        $(".header_list_btn").click(function() {
+          if($("#left_index").css("display") == "none") {
+            $("#left_index").css("display","block")
+          }
+          $("#left_index").css("visibility","visible");
+          var index_width = $("#left_index").width();
+          $("#left_index").css("left",-index_width);
+          $("#left_index").animate({left:'0'}).fadeIn("fast");
+        });
+        $(window).click(function() {
+          var xx = event.pageX;
+          var yy = event.pageY;
+          var window_width = $(window).width();
+          if($("#left_index").css("visibility") == "visible") {
+            if(xx>window_width*0.6) {
+              var index_width = $("#left_index").width();
+              $("#left_index").animate({left:String(-index_width)+"px"}).fadeOut("fast");
+              //$("#left_index").css("visibility","hidden");
+            }
+          }
+        });
+      });
+
+    </script>
   </head>
 
   <body>
+    <div class="container index" id="left_index">
+      <div class="row">
+        <img src="images/shape17.jpg" alt="index_img1" class="index_img">
+        <p class="index_row_p">公告</p>
+        <button type="button" name="button" class="index_jump_btn btn">
+          <img src="images/shape18.jpg" alt="index_img_arror">
+        </button>
+      </div>
+      <div class="row">
+        <img src="images/shape19.jpg" alt="index_img1" class="index_img">
+        <p class="index_row_p">设置</p>
+        <button type="button" name="button" class="index_jump_btn btn">
+          <img src="images/shape18.jpg" alt="index_img_arror">
+        </button>
+      </div>
+      <div class="row">
+        <img src="images/shape20.jpg" alt="index_img1" class="index_img">
+        <p class="index_row_p">帮助</p>
+        <button type="button" name="button" class="index_jump_btn btn">
+          <img src="images/shape18.jpg" alt="index_img_arror">
+        </button>
+      </div>
+      <div class="row">
+        <img src="images/shape21.png" alt="index_img1" class="index_img">
+        <p class="index_row_p">关于</p>
+        <button type="button" name="button" class="index_jump_btn btn">
+          <img src="images/shape18.jpg" alt="index_img_arror">
+        </button>
+      </div>
+    </div>
+
     <div class="container">
       <div class="header">
         <div class="row">

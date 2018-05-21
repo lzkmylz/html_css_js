@@ -28,6 +28,7 @@
 }
 
 .header {
+  position: relative;
   margin-bottom: 20px;
 
   .row {
@@ -135,6 +136,44 @@
           background-color: #69d1e9;
         }
       }
+    }
+  }
+}
+
+.index {
+  float: left;
+  position: absolute;
+  width: 60%;
+  z-index: 99;
+  background-color: #fff;
+  border-right: 4px solid #29bde0;
+  visibility: hidden;
+
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    border-bottom: 1px solid #c9c9c9;
+
+    .index_img {
+      position: relative;
+      float: left;
+      top: 10px;
+    }
+    .index_row_p {
+      float: left;
+      font-size: 16px;
+      position: relative;
+      top: 17px;
+      margin-left: 10px;
+      color: #29bde0;
+    }
+    .index_jump_btn {
+      float: right;
+      position: relative;
+      top: 10px;
     }
   }
 }
