@@ -19,6 +19,8 @@
           var index_width = $("#left_index").width();
           $("#left_index").css("left",-index_width);
           $("#left_index").animate({left:'0'}).fadeIn("fast");
+          $(".header").animate({left:String(index_width)+"px"}).fadeIn("fast");
+          $(".mainbody").animate({left:String(index_width)+"px"}).fadeIn("fast");
         });
         $(window).click(function() {
           var xx = event.pageX;
@@ -28,7 +30,8 @@
             if(xx>window_width*0.6) {
               var index_width = $("#left_index").width();
               $("#left_index").animate({left:String(-index_width)+"px"}).fadeOut("fast");
-              //$("#left_index").css("visibility","hidden");
+              $(".header").animate({left:0}).fadeIn("fast");
+              $(".mainbody").animate({left:"15px"}).fadeIn("fast");
             }
           }
         });
@@ -69,7 +72,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="main_window">
       <div class="header">
         <div class="row">
           <button type="button" name="button" class="header_list_btn btn">
