@@ -1,0 +1,208 @@
+.content {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  left: 16.66666667%;
+  width: 66.66666667%;
+}
+.backgroundcolor_fff {
+  background-color: #fff;
+}
+.backgroundcolor_29b078 {
+  background-color: #29b078;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.header .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+}
+.header .row .tel_words {
+  float: left;
+  position: relative;
+  color: green;
+  font-size: 14px;
+  top: 18px;
+}
+.header .row .header_logo_div {
+  float: right;
+  position: relative;
+  top: 5px;
+}
+.header .row .header_link_div {
+  float: right;
+  position: relative;
+  right: -15px;
+  width: 33.33333333%;
+  top: 18px;
+}
+.header .row .header_link_div li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.header .row .header_link_div li a {
+  font-size: 14px;
+  color: #fff;
+}
+.header .row .header_link_div li div {
+  position: relative;
+  top: 13px;
+  padding-bottom: 5px;
+}
+.header .row .header_link_div li:hover div {
+  background-color: #fff;
+}
+.carousel {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel .carousel-indicators .active {
+  background-color: #fff !important;
+}
+.carousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel .carousel-inner .item {
+  position: relative;
+  display: none;
+}
+.carousel .carousel-inner .item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.carousel .carousel-inner .active {
+  display: block;
+}
+.carousel .carousel-inner .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel .carousel-inner .caption_box {
+  bottom: 50%;
+  transform: translate(0, 50%);
+}
+.carousel .carousel-inner .caption_box .caption_line1 {
+  float: right;
+  position: relative;
+  width: 66.66666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.carousel .carousel-inner .caption_box .caption_line2 {
+  float: right;
+  position: relative;
+  width: 83.33333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.carousel .carousel-inner .caption_box .caption_line2 .caption_line2_left {
+  font-size: 50px;
+}
+.carousel .carousel-inner .caption_box .caption_line2 .caption_line2_right {
+  font-size: 25px;
+}
+.carousel .carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel .carousel-control .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.carousel .left {
+  left: 0;
+  right: auto;
+}
+.carousel .left .glyphicon-chevron-left {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  font-size: 30px;
+}
+.carousel .left .glyphicon-chevron-left::before {
+  content: "\e079";
+}
+.carousel .right {
+  right: 0;
+  left: auto;
+}
+.carousel .right .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  font-size: 30px;
+}
+.carousel .right .glyphicon-chevron-right::before {
+  content: "\e080";
+}
