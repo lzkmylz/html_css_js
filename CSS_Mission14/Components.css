@@ -16,7 +16,7 @@
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .header .row {
   margin-left: -15px;
@@ -107,6 +107,22 @@
   height: auto;
 }
 .carousel .carousel-inner .active {
+  display: block;
+}
+.carousel .carousel-inner .active_left {
+  float: left;
+  display: block;
+}
+.carousel .carousel-inner .active_next {
+  float: right;
+  display: block;
+}
+.carousel .carousel-inner .active_prev {
+  float: left;
+  display: block;
+}
+.carousel .carousel-inner .active_right {
+  float: right;
   display: block;
 }
 .carousel .carousel-inner .carousel-caption {

@@ -9,6 +9,35 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="index_style.css" type="text/css">
     <link rel="stylesheet" href="Components.css" type="text/css">
+    <script type="text/javascript">
+
+      var log = console.log;
+      //自动播放
+      var timer = null;
+      var key = 0;
+      var circle_key = 0;
+      timer = setInterval(autoplay,2000);
+      function autoplay() {
+        //播放哪个
+        var total_items = $(".item").length;
+        next_key = key + 1;
+        if(next_key > total_items-1) {
+          next_key = 0;
+        }
+        carousel_animate(key, next_key);
+      }
+
+      function carousel_animate(current_item_key, next_item_key) {
+        if(current_item_key > next_item_key) {
+          //从左向右滑
+
+        } else {
+          //从右向左滑
+
+        }
+      }
+
+    </script>
   </head>
 
   <body>
