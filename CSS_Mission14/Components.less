@@ -119,22 +119,27 @@
       }
     }
     .active {
+      left: 0;
       display: block;
     }
     .active_left {
-      float: left;
       display: block;
     }
     .active_next {
-      float: right;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 100%;
       display: block;
     }
     .active_prev {
-      float: left;
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 100%;
       display: block;
     }
     .active_right {
-      float: right;
       display: block;
     }
     .carousel-caption {

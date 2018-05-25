@@ -107,22 +107,27 @@
   height: auto;
 }
 .carousel .carousel-inner .active {
+  left: 0;
   display: block;
 }
 .carousel .carousel-inner .active_left {
-  float: left;
   display: block;
 }
 .carousel .carousel-inner .active_next {
-  float: right;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
   display: block;
 }
 .carousel .carousel-inner .active_prev {
-  float: left;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
   display: block;
 }
 .carousel .carousel-inner .active_right {
-  float: right;
   display: block;
 }
 .carousel .carousel-inner .carousel-caption {

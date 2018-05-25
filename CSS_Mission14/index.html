@@ -16,25 +16,73 @@
       var timer = null;
       var key = 0;
       var circle_key = 0;
-      timer = setInterval(autoplay,2000);
+      timer = setInterval(autoplay,5000);
       function autoplay() {
         //播放哪个
-        var total_items = $(".item").length;
+        var total_items = $('.item').length;
         next_key = key + 1;
         if(next_key > total_items-1) {
           next_key = 0;
         }
         carousel_animate(key, next_key);
+        key = next_key;
       }
 
       function carousel_animate(current_item_key, next_item_key) {
-        if(current_item_key > next_item_key) {
-          //从左向右滑
+        //从右向左滑
+        var $current_item = $('.item.active');
+        var $next_item = $($('.item')[next_item_key]);
+        var $current_circle = $($('.circle.active'));
+        var $next_circle = $($('.circle')[next_item_key]);
+        var item_width = $current_item.width();
 
+        if (current_item_key < next_item_key) {
+          $current_item.removeClass('active');
+          $current_item.addClass('active_left');
+          $next_item.addClass('active_next');
+
+          if ($next_item.css('display') == 'none') {
+            $next_item.css('display', 'block');
+            $next_item.css('left', '100%');
+          }
+
+          $current_circle.removeClass('active');
+          $next_circle.addClass('active');
+
+          $current_item.animate({left:String(-item_width)+'px'}).fadeOut('slow', function() {
+            $current_item.removeClass('active_left');
+            $current_item.css('left', 0);
+            $next_item.removeClass('active_next');
+            $next_item.addClass('active');
+          });
+          $next_item.animate({left:0}).fadeIn('slow', function() {
+            $next_item.css('left', 0);
+          });
         } else {
-          //从右向左滑
+          $current_item.removeClass('active');
+          $current_item.addClass('active_right');
+          $next_item.addClass('active_prev');
 
+          if ($next_item.css('display') == 'none') {
+            $next_item.css('display', 'block');
+            $next_item.css('left', '-100%');
+          }
+
+          $current_circle.removeClass('active');
+          $next_circle.addClass('active');
+
+          $current_item.animate({left:String(item_width)+'px'}).fadeOut('slow', function() {
+            $current_item.removeClass('active_right');
+            $current_item.css('left', 0);
+            $next_item.removeClass('active_prev');
+            $next_item.addClass('active');
+          });
+          $next_item.animate({left:0}).fadeIn('slow', function() {
+            $next_item.css('left', 0);
+          });
         }
+
+
       }
 
     </script>
@@ -75,9 +123,9 @@
         <div class="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-generic" data-slide-to="0" class="circle active"></li>
+            <li data-target="#carousel-generic" data-slide-to="1" class="circle"></li>
+            <li data-target="#carousel-generic" data-slide-to="2" class="circle"></li>
           </ol>
 
           <div class="carousel-inner">
