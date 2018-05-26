@@ -9,132 +9,7 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="index_style.css" type="text/css">
     <link rel="stylesheet" href="Components.css" type="text/css">
-    <script type="text/javascript">
-
-      var log = console.log;
-      //自动播放
-      var timer = null;
-      var key = 0;
-      var circle_key = 0;
-      timer = setInterval(autoplay,5000);
-      function autoplay() {
-        //播放哪个
-        var total_items = $('.item').length;
-        next_key = key + 1;
-        if(next_key > total_items-1) {
-          next_key = 0;
-        }
-        carousel_animate(key, next_key);
-        key = next_key;
-      }
-
-      function carousel_animate(current_item_key, next_item_key) {
-        //从右向左滑
-        if($('.item.active').length == 0) {
-          setTimeout(function() {
-            carousel_animate(current_item_key, next_item_key);
-          }, 200);
-          return;
-        }
-        var $current_item = $('.item.active');
-        var $next_item = $($('.item')[next_item_key]);
-        var $current_circle = $($('.circle.active'));
-        var $next_circle = $($('.circle')[next_item_key]);
-        var item_width = $current_item.width();
-
-        if (current_item_key < next_item_key) {
-          $current_item.removeClass('active');
-          $current_item.addClass('active_left');
-          $next_item.addClass('active_next');
-
-          if ($next_item.css('display') == 'none') {
-            $next_item.css('display', 'block');
-            $next_item.css('left', '100%');
-          }
-
-          $current_circle.removeClass('active');
-          $next_circle.addClass('active');
-
-
-          $current_item.animate({left:String(-item_width)+'px'}).fadeOut('slow', function() {
-            $current_item.removeClass('active_left');
-            $current_item.css('left', 0);
-            $next_item.removeClass('active_next');
-            $next_item.addClass('active');
-          });
-          $next_item.animate({left:0}).fadeIn('slow', function() {
-            $next_item.css('left', 0);
-          });
-
-        } else {
-          $current_item.removeClass('active');
-          $current_item.addClass('active_right');
-          $next_item.addClass('active_prev');
-
-          if ($next_item.css('display') == 'none') {
-            $next_item.css('display', 'block');
-            $next_item.css('left', '-100%');
-          }
-
-          $current_circle.removeClass('active');
-          $next_circle.addClass('active');
-
-          $current_item.animate({left:String(item_width)+'px'}).fadeOut('slow', function() {
-            $current_item.removeClass('active_right');
-            $current_item.css('left', 0);
-            $next_item.removeClass('active_prev');
-            $next_item.addClass('active');
-          });
-          $next_item.animate({left:0}).fadeIn('slow', function() {
-            $next_item.css('left', 0);
-          });
-        }
-      }
-
-      $(function() {
-        $('.circle').click(function(obj, e) {
-          var $current_circle = $($('.circle.active')[0]);
-          var $next_circle = $(obj.target);
-          if ($current_circle.index() == $next_circle.index()) {
-            clearInterval(timer)
-            timer = setInterval(autoplay, 5000);
-          } else {
-            clearInterval(timer)
-            carousel_animate($current_circle.index(), $next_circle.index());
-            key = $next_circle.index();
-            timer = setInterval(autoplay, 5000);
-          }
-        })
-      });
-
-      $(function() {
-        $('.left.carousel-control').click(function() {
-          var next_key = key - 1;
-          if (next_key < 0) {
-            next_key = 2;
-          }
-          clearInterval(timer)
-          carousel_animate(key, next_key);
-          key = next_key;
-          timer = setInterval(autoplay, 5000);
-        })
-      });
-
-      $(function() {
-        $('.right.carousel-control').click(function() {
-          var next_key = key + 1;
-          if (next_key > 2) {
-            next_key = 0;
-          }
-          clearInterval(timer)
-          carousel_animate(key, next_key);
-          key = next_key;
-          timer = setInterval(autoplay, 5000);
-        })
-      });
-
-
-    </script>
+    <script type="text/javascript" src="Components.js"></script>
   </head>
 
   <body>
@@ -218,7 +93,66 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
+
+        <div class="row advantages">
+          <div class="content">
+            <div class="quarter">
+              <div class="effective">
+                <img src="images/shape05.jpg" alt="effective_img" class="effective_img">
+                <p class="effective_p1">高效</p>
+                <p class="effective_p2">将五到七年的成长时间，缩短到一年到三年。</p>
+              </div>
+            </div>
+
+            <div class="quarter">
+              <div class="standard">
+                <img src="images/shape06.jpg" alt="standard_img" class="standard_img">
+                <p class="standard_p1">规范</p>
+                <p class="standard_p2">标准的实战教程，不会走弯路</p>
+              </div>
+            </div>
+
+            <div class="quarter">
+              <div class="connection">
+                <img src="images/shape07.jpg" alt="connection_img" class="connection_img">
+                <p class="connection_p1">人脉</p>
+                <p class="connection_p2">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</p>
+              </div>
+            </div>
+
+            <div class="quarter">
+              <div class="study">
+                <div class="study_content">
+                  <div class="row">
+                    <img src="images/shape08.jpg" alt="study_img" class="study_img">
+                    <p class="study_num">12400</p>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="row">
+                    <p class="study_p">累计在线学习人数</p>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="row">
+                    <img src="images/shape08.jpg" alt="study_img" class="study_img">
+                    <p class="study_num">12400</p>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="row">
+                    <p class="study_p">学员已经找到满意工作</p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        
+
+
       </div>
+
 
       <div class="footer">
 
