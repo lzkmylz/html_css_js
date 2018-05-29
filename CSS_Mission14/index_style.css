@@ -11,6 +11,7 @@
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px;
+  box-sizing: border-box;
 }
 .row .content {
   float: left;
@@ -18,12 +19,18 @@
   min-height: 1px;
   width: 66.66666667%;
   left: 16.66666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 .row .quarter {
   float: left;
   position: relative;
   min-height: 1px;
   width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 .advantages {
   text-align: center;
@@ -105,6 +112,7 @@
   color: #dddddd;
 }
 .learn_row {
+  font-size: 18px;
   background-color: #fafafa;
   text-align: center;
 }
@@ -161,4 +169,110 @@
 .learn1_4 .margin_left,
 .learn5_8 .margin_left {
   margin-left: 15px;
+}
+.students_show {
+  font-size: 18px;
+  background-color: #fafafa;
+  padding: 40px 0;
+  text-align: center;
+}
+.student_pictures {
+  background-color: #fafafa;
+  text-align: center;
+}
+.student_pictures .content {
+  background-color: #fafafa;
+}
+.student_pictures .student_box {
+  background-color: #ffffff;
+  padding: 0 15px 10px 15px;
+}
+.student_pictures .student_box .student_img {
+  margin-top: 20px;
+}
+.student_pictures .student_box .student_title {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.student_pictures .student_box .student_words {
+  text-align: left;
+  color: #b0b0b0;
+}
+.point {
+  background-color: #fafafa;
+  padding: 20px 0;
+  text-align: center;
+}
+.point .point_box {
+  display: inline-block;
+}
+.point .point_green,
+.point .point_gray {
+  float: left;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+}
+.point .point_green {
+  background-color: #29b078;
+}
+.point .point_gray {
+  background-color: #ffffff;
+}
+.enterprice {
+  font-size: 18px;
+  background-color: #fafafa;
+  padding: 80px 0 40px 0;
+  text-align: center;
+}
+.enterprice_pictures {
+  background-color: #fafafa;
+  padding-bottom: 80px;
+}
+.enterprice_pictures .img_box {
+  float: left;
+  width: 20%;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+}
+.enterprice_pictures .img_box img {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 100%;
+}
+.enterprice_pictures .img_box:hover {
+  box-shadow: 10px 10px 5px #888888;
+}
+.friend_link {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+.link_line {
+  padding-top: 10px;
+  color: #999999;
+  background-color: #fff;
+}
+.link_line .link {
+  float: left;
+  width: 10%;
+  text-align: left;
+}
+.link_line2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #999999;
+  background-color: #fff;
+}
+.link_line2 .link {
+  float: left;
+  width: 10%;
+  text-align: left;
 }

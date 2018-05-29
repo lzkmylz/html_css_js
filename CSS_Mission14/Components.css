@@ -251,3 +251,107 @@
 .carousel .right .glyphicon-chevron-right::before {
   content: "\e080";
 }
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 400px
+  bottom: 0;
+  margin: 0 -15px 0 -15px;
+  background-color: #26a26f;
+  overflow-x: hidden;
+}
+.footer .footer_body {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.footer .content_left {
+  float: left;
+  width: 66.66666667%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.footer .content_left_half {
+  float: left;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.footer .content_right {
+  float: left;
+  width: 33.33333333%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.footer .footerbody_left,
+.footer .footerbody_right {
+  position: relative;
+  right: 45px;
+  text-align: left;
+}
+.footer .footerbody_left p,
+.footer .footerbody_right p {
+  margin-bottom: 20px;
+}
+.footer .foterbody_left_contact {
+  position: relative;
+  top: 40px;
+}
+.footer .footerbody_left a,
+.footer .footerbody_right a {
+  text-decoration: none;
+  color: white;
+}
+.footer .footerbody_left a:hover {
+  text-decoration: underline;
+}
+.footer .footerbody_right a:hover {
+  text-decoration: underline;
+}
+.footer .footerbody_left_title,
+.footer .footerbody_right_title,
+.footer .foterbody_left_contact {
+  font-size: 16px;
+}
+.footer .footerbody_right_content a,
+.footer .foterbody_left_contact a {
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.footer .weixin_box {
+  float: right;
+  margin-right: 10%;
+}
+.footer .weixin_box p {
+  margin-bottom: 10px;
+}
+.footer .copyright {
+  color: white;
+  font-size: 8px;
+  text-align: center;
+}
+.footer .copyright_line {
+  display: inline-block;
+}
+.footer .copyright_line p {
+  margin-bottom: 10px;
+}
+.footer .copyright_p {
+  float: left;
+  padding-right: 5px;
+  border-right: 1px solid #fff;
+}
+.footer .beian {
+  float: left;
+  padding-left: 5px;
+}
