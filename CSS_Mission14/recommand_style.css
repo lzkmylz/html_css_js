@@ -1,0 +1,225 @@
+.header .logo_img {
+  float: left;
+  position: relative;
+  width: 118px;
+  height: 50px;
+}
+.mainbody .row {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 50px;
+}
+.mainbody .row .line1 {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #d0d6d9;
+  font-size: 16px;
+}
+.mainbody .row .line2 {
+  padding: 10px 15px 10px 15px;
+  border-bottom: 1px solid #edf1f2;
+}
+.mainbody .row .line2 .direct {
+  position: relative;
+  top: 5px;
+  float: left;
+  padding-left: 0;
+  color: #999999;
+}
+.mainbody .row .line2 .select {
+  float: left;
+  width: 40px;
+  height: 22px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #29b078;
+}
+.mainbody .row .line2 .select a {
+  position: relative;
+  top: 5px;
+  color: white;
+  text-decoration: none;
+}
+.mainbody .row .line2 .not_select {
+  float: left;
+  height: 22px;
+  margin: 0 15px;
+  text-align: center;
+}
+.mainbody .row .line2 .not_select a {
+  position: relative;
+  top: 5px;
+  color: black;
+  text-decoration: none;
+}
+.mainbody .row .line3 {
+  padding: 30px 15px;
+  border-bottom: 1px solid #d0d6d9;
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainbody .row .line4 {
+  padding-left: 0;
+}
+.mainbody .row .line4 .box {
+  margin: 30px 0 20px 0;
+  border: 1px solid #eeeded;
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.mainbody .row .line4 .box .box_line1 {
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line1 .box_img {
+  height: 130px;
+  padding-right: 0;
+}
+.mainbody .row .line4 .box .box_line1 .words {
+  padding: 5px;
+  text-align: left;
+}
+.mainbody .row .line4 .box .box_line1 .words .box_words_line1 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainbody .row .line4 .box .box_line1 .words .box_words_line2 {
+  margin: 10px 0;
+  line-height: 1.42857143;
+  font-size: 14px;
+}
+.mainbody .row .line4 .box .box_line2 {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: left;
+  border-bottom: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line2 .box_line2_left {
+  border-right: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line2 .box_line2_left .content_quter {
+  padding: 0;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.mainbody .row .line4 .box .box_line2 .box_line2_left .star_img {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 16.66666667%;
+  box-sizing: border-box;
+  transform: translate(0, 50%);
+}
+.mainbody .row .line4 .box .box_line2 .difficulty {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 41.66666667%;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+.mainbody .row .line4 .box .box_line3 .red {
+  color: red;
+  font-size: 12px;
+}
+.mainbody .row .line4 .box .box_line3 .black {
+  color: black;
+  font-size: 12px;
+}
+.mainbody .row .line4 .box .box_line3 .box_line3_left {
+  border-right: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line3 .box_line3_right {
+  padding-right: 0;
+}
+.mainbody .row .line4 .box .box_line4 {
+  border-top: 1px solid #eeeded;
+  border-bottom: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line4 .box_line4_left {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 41.66666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  line-height: 104px;
+}
+.mainbody .row .line4 .box .box_line4 .box_line4_right {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  width: 58.33333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  border-left: 1px solid #eeeded;
+}
+.mainbody .row .line4 .box .box_line4 .box_line4_right .box_line4_row {
+  border-bottom: 1px solid #eeeded;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mainbody .row .line4 .box .box_line4 .box_line4_right .box_line4_row .box_line4_words_right {
+  right: 0;
+  padding-right: 5px;
+  text-align: right;
+}
+.mainbody .row .line4 .box .box_line5 {
+  border-bottom: 1px solid #eeeded;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mainbody .row .line4 .box .box_line5 p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainbody .row .line4 .box .box_line6 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mainbody .row .line4 .box .box_line6 p {
+  width: 115%;
+  padding-left: 15px;
+  padding-right: 0;
+  font-size: 12px;
+  color: #b8b8b8;
+}
+.mainbody .row .line4 .box:hover + .hover_div,
+.mainbody .row .line4 .hover_div:hover {
+  display: inherit;
+}
+.mainbody .row .line4 .hover_div {
+  position: absolute;
+  height: 460px;
+  margin-top: 30px;
+  padding-left: 0;
+  display: none;
+}
+.mainbody .row .line4 .hover_div .hover_words {
+  padding-left: 0;
+}
+.mainbody .row .line4 .hover_div .hover_words .hover_box {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+}
+.mainbody .row .line4 .hover_div .hover_words .hover_box .hover_line1 {
+  margin-top: 80px;
+}
+.mainbody .row .line4 .hover_div .hover_words .hover_box .hover_line2 {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: left;
+  text-indent: 2em;
+}
